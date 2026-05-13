@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Puro Showcase — Demo sin CSS ni JavaScript</title>
+</head>
+<body>
+
+<h2>Demostración del poder del HTML puro, sin CSS ni JavaScript</h2>
+
+<details open>
+  <summary><strong>🔵 Formulario interactivo nativo</strong></summary>
+  <form action="#">
+    <fieldset>
+      <legend>Registro de usuario</legend>
+      <p>
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ada Lovelace" required autofocus>
+      </p>
+      <p>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="ada@ejemplo.com" required>
+      </p>
+      <p>
+        <label for="pass">Contraseña (mín. 8 caracteres):</label><br>
+        <input type="password" id="pass" name="pass" minlength="8" required>
+      </p>
+      <p>
+        <label for="edad">Edad (18–99):</label><br>
+        <input type="number" id="edad" name="edad" min="18" max="99" value="25">
+      </p>
+      <p>
+        <label for="fecha">Fecha de nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha">
+      </p>
+      <p>
+        <label for="color">Color favorito:</label>
+        <input type="color" id="color" name="color" value="#cc3333">
+      </p>
+      <p>
+        <label for="volumen">Nivel de experiencia:</label><br>
+        <input type="range" id="volumen" name="volumen" min="0" max="100" value="60">
+      </p>
+      <p>
+        <label for="pais">País:</label><br>
+        <input type="text" id="pais" name="pais" list="paises" placeholder="Escribí tu país...">
+        <datalist id="paises">
+          <option value="Argentina">
+          <option value="México">
+          <option value="Colombia">
+          <option value="España">
+          <option value="Chile">
+          <option value="Brasil">
+          <option value="Uruguay">
+          <option value="Perú">
+        </datalist>
+      </p>
+      <p>
+        <label>Intereses:</label><br>
+        <label><input type="checkbox" name="int" value="tech"> Tecnología</label>
+        <label><input type="checkbox" name="int" value="ciencia"> Ciencia</label>
+        <label><input type="checkbox" name="int" value="arte"> Arte</label>
+        <label><input type="checkbox" name="int" value="musica"> Música</label>
+      </p>
+      <p>
+        <label>Experiencia previa:</label><br>
+        <label><input type="radio" name="exp" value="ninguna"> Ninguna</label>
+        <label><input type="radio" name="exp" value="algo"> Algo</label>
+        <label><input type="radio" name="exp" value="experto" checked> Experto</label>
+      </p>
+      <p>
+        <label for="bio">Biografía breve:</label><br>
+        <textarea id="bio" name="bio" rows="3" cols="40" placeholder="Contanos algo sobre vos..."></textarea>
+      </p>
+      <p>
+        <label for="foto">Subir foto de perfil:</label><br>
+        <input type="file" id="foto" name="foto" accept="image/*">
+      </p>
+      <p>
+        <button type="submit">Crear cuenta</button>
+        <button type="reset">Limpiar</button>
+      </p>
+    </fieldset>
+  </form>
+</details>
+
+<hr>
+
+<details>
+  <summary><strong>🎬 Multimedia nativa</strong></summary>
+  <p>
+    <strong>Audio:</strong><br>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+  </p>
+  <p>
+    <strong>Video:</strong><br>
+    <video controls width="320" height="180" poster="">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+  </p>
+</details>
+
+<hr>
+
+<details>
+  <summary><strong>📊 Tablas y datos</strong></summary>
+  <table border="1" cellpadding="8" cellspacing="0" width="100%">
+    <caption>Lenguajes más usados en 2024</caption>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col">Lenguaje</th>
+        <th scope="col">Popularidad</th>
+        <th scope="col">Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Python</td>
+        <td><meter value="95" min="0" max="100" low="40" high="70" optimum="100">95%</meter> 95%</td>
+        <td>General</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td><meter value="90" min="0" max="100" low="40" high="70" optimum="100">90%</meter> 90%</td>
+        <td>Web</td>
+      </tr>
+      <tr>
+        <td>Rust</td>
+        <td><meter value="55" min="0" max="100" low="40" high="70" optimum="100">55%</meter> 55%</td>
+        <td>Sistemas</td>
+      </tr>
+      <tr>
+        <td>Go</td>
+        <td><meter value="62" min="0" max="100" low="40" high="70" optimum="100">62%</meter> 62%</td>
+        <td>Backend</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3"><em>Fuente: encuesta simulada de ejemplo</em></td>
+      </tr>
+    </tfoot>
+  </table>
+</details>
+
+<hr>
+
+<details>
+  <summary><strong>📝 Tipografía y texto semántico</strong></summary>
+  <p>El HTML tiene decenas de etiquetas de texto nativas:</p>
+  <p><mark>Texto resaltado</mark>, <del>texto tachado</del>, <ins>texto insertado</ins>, <abbr title="HyperText Markup Language">HTML</abbr>, <kbd>Ctrl+C</kbd>, <code>console.log("hola")</code>, <var>x²</var>, <samp>Error 404</samp></p>
+  <p><span>Texto grande</span> y <small>texto pequeño</small></p>
+  <p>Superíndice: x<sup>2</sup> &nbsp;|&nbsp; Subíndice: CO<sub>2</sub></p>
+  <p><strong>Negrita semántica</strong> y <em>énfasis semántico</em></p>
+  <blockquote cite="https://www.w3.org">
+    <p>"La web está diseñada para funcionar para todos, independientemente del hardware, software, idioma o habilidades."</p>
+    <footer>— Tim Berners-Lee</footer>
+  </blockquote>
+  <pre><code>function saludo(nombre) {
+  return `Hola, ${nombre}!`;
+}</code></pre>
+  <p>Definición nativa:</p>
+  <dl>
+    <dt>HTML</dt>
+    <dd>Lenguaje de marcado para estructurar contenido web.</dd>
+    <dt>CSS</dt>
+    <dd>Lenguaje para estilizar páginas web.</dd>
+    <dt>JavaScript</dt>
+    <dd>Lenguaje de programación para la web.</dd>
+  </dl>
+</details>
+
+<hr>
+
+<details>
+  <summary><strong>🗺️ Mapa de imagen interactivo</strong></summary>
+  <p>Clickeá una zona del rectángulo:</p>
+  <img src="https://placehold.co/400x150/e8f4fd/1a73e8?text=Mapa+Interactivo" usemap="#mapa" width="400" height="150" alt="Mapa de área interactivo con tres zonas">
+  <map name="mapa">
+    <area shape="rect" coords="0,0,133,150" href="#zona1" alt="Zona 1" title="¡Hiciste clic en Zona 1!">
+    <area shape="rect" coords="134,0,266,150" href="#zona2" alt="Zona 2" title="¡Hiciste clic en Zona 2!">
+    <area shape="rect" coords="267,0,400,150" href="#zona3" alt="Zona 3" title="¡Hiciste clic en Zona 3!">
+  </map>
+</details>
+
+<hr>
+
+<details>
+  <summary><strong>🔢 Progreso y métricas nativas</strong></summary>
+  <p>Carga del sistema: <progress value="72" max="100">72%</progress> 72%</p>
+  <p>Batería: <meter value="0.3" min="0" max="1" low="0.25" high="0.75" optimum="1">30%</meter> 30% (baja)</p>
+  <p>Temperatura: <meter value="38.5" min="35" max="42" low="37" high="39" optimum="36.5">38.5°C</meter> 38.5°C</p>
+</details>
+
+<hr>
+
+<details>
+  <summary><strong>💬 Diálogo nativo del navegador</strong></summary>
+  <p>El elemento <code>&lt;dialog&gt;</code> es un modal 100% HTML nativo:</p>
+  <dialog>
+    <h3>¡Soy un &lt;dialog&gt; nativo!</h3>
+    <p>Sin JavaScript, sin CSS: solo HTML puro.</p>
+    <form method="dialog">
+      <button>Cerrar</button>
+    </form>
+  </dialog>
+</details>
+
+<hr>
+
+<details>
+  <summary><strong>📋 Listas y estructura</strong></summary>
+  <ol type="I">
+    <li>Elemento romano I
+      <ul>
+        <li>Sub-elemento A
+          <ul type="circle">
+            <li>Sub-sub A1</li>
+            <li>Sub-sub A2</li>
+          </ul>
+        </li>
+        <li>Sub-elemento B</li>
+      </ul>
+    </li>
+    <li>Elemento romano II</li>
+    <li>Elemento romano III</li>
+  </ol>
+</details>
+
+<hr>
+
+<details>
+  <summary><strong>🖋️ Fuentes y caracteres especiales</strong></summary>
+  <address>
+    Desarrollado por <a href="mailto:hola@ejemplo.com">Ada Lovelace</a><br>
+    Buenos Aires, Argentina<br>
+    <time datetime="2024-01-15">15 de enero, 2024</time>
+  </address>
+  <p>Entidades HTML: &copy; &reg; &trade; &euro; &yen; &pound; &larr; &rarr; &uarr; &darr; &infin; &sum; &radic; &pi; &Omega; &alpha; &beta; &ne; &le; &ge; &plusmn;</p>
+  <ruby>漢字<rp>(</rp><rt>kan-ji</rt><rp>)</rp></ruby> — anotación fonética nativa
+</details>
+
+<hr>
+
+<p><small><em>Todo lo que ves arriba es 100% HTML puro. Sin una sola línea de CSS ni JavaScript.</em></small></p>
+
+</body>
+</html>
