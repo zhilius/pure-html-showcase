@@ -20,8 +20,29 @@
 </head>
 <body>
 
-<h2>Demostración del poder del HTML puro, sin CSS ni JavaScript</h2>
+  <a href="#main-content">Saltar al contenido principal</a>
 
+  <header>
+    <h1>HTML Puro Showcase</h1>
+    <p>Demostración del poder del HTML puro, sin CSS ni JavaScript.</p>
+    <nav aria-label="Índice de contenidos">
+      <ol>
+        <li><a href="#sec-form">Formulario interactivo nativo</a></li>
+        <li><a href="#sec-media">Multimedia nativa</a></li>
+        <li><a href="#sec-tables">Tablas y datos</a></li>
+        <li><a href="#sec-typo">Tipografía y texto semántico</a></li>
+        <li><a href="#sec-map">Mapa de imagen interactivo</a></li>
+        <li><a href="#sec-progress">Progreso y métricas nativas</a></li>
+        <li><a href="#sec-dialog">Diálogo nativo del navegador</a></li>
+        <li><a href="#sec-lists">Listas y estructura</a></li>
+        <li><a href="#sec-entities">Fuentes y caracteres especiales</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section aria-label="Formulario interactivo nativo" id="sec-form">
 <details open>
   <summary><strong>🔵 Formulario interactivo nativo</strong></summary>
   <form action="#">
@@ -97,9 +118,11 @@
     </fieldset>
   </form>
 </details>
+    </section>
 
-<hr>
+    <hr>
 
+    <section aria-label="Multimedia nativa" id="sec-media">
 <details>
   <summary><strong>🎬 Multimedia nativa</strong></summary>
   <p>
@@ -117,9 +140,11 @@
     </video>
   </p>
 </details>
+    </section>
 
-<hr>
+    <hr>
 
+    <section aria-label="Tablas y datos" id="sec-tables">
 <details>
   <summary><strong>📊 Tablas y datos</strong></summary>
   <table border="1" cellpadding="8" cellspacing="0" width="100%">
@@ -165,9 +190,11 @@
     </tfoot>
   </table>
 </details>
+    </section>
 
-<hr>
+    <hr>
 
+    <section aria-label="Tipografía y texto semántico" id="sec-typo">
 <details>
   <summary><strong>📝 Tipografía y texto semántico</strong></summary>
   <p>El HTML tiene decenas de etiquetas de texto nativas:</p>
@@ -192,9 +219,11 @@
     <dd>Lenguaje de programación para la web.</dd>
   </dl>
 </details>
+    </section>
 
-<hr>
+    <hr>
 
+    <section aria-label="Mapa de imagen interactivo" id="sec-map">
 <details>
   <summary><strong>🗺️ Mapa de imagen interactivo</strong></summary>
   <p>Clickeá una zona del rectángulo:</p>
@@ -204,33 +233,42 @@
     <area shape="rect" coords="134,0,266,150" href="#zona2" alt="Zona 2" title="¡Hiciste clic en Zona 2!">
     <area shape="rect" coords="267,0,400,150" href="#zona3" alt="Zona 3" title="¡Hiciste clic en Zona 3!">
   </map>
+    <p id="zona1" hidden>📍 Zona 1 seleccionada</p>
+    <p id="zona2" hidden>📍 Zona 2 seleccionada</p>
+    <p id="zona3" hidden>📍 Zona 3 seleccionada</p>
 </details>
+    </section>
 
-<hr>
+    <hr>
 
+    <section aria-label="Progreso y métricas nativas" id="sec-progress">
 <details>
   <summary><strong>🔢 Progreso y métricas nativas</strong></summary>
   <p>Carga del sistema: <progress value="72" max="100">72%</progress> 72%</p>
   <p>Batería: <meter value="0.3" min="0" max="1" low="0.25" high="0.75" optimum="1">30%</meter> 30% (baja)</p>
   <p>Temperatura: <meter value="38.5" min="35" max="42" low="37" high="39" optimum="36.5">38.5°C</meter> 38.5°C</p>
 </details>
+    </section>
 
-<hr>
+    <hr>
 
+    <section aria-label="Diálogo nativo del navegador" id="sec-dialog">
 <details>
   <summary><strong>💬 Diálogo nativo del navegador</strong></summary>
   <p>El elemento <code>&lt;dialog&gt;</code> es un modal 100% HTML nativo:</p>
   <dialog>
-    <h3>¡Soy un &lt;dialog&gt; nativo!</h3>
+    <h2>¡Soy un &lt;dialog&gt; nativo!</h2>
     <p>Sin JavaScript, sin CSS: solo HTML puro.</p>
     <form method="dialog">
       <button>Cerrar</button>
     </form>
   </dialog>
 </details>
+    </section>
 
-<hr>
+    <hr>
 
+    <section aria-label="Listas y estructura" id="sec-lists">
 <details>
   <summary><strong>📋 Listas y estructura</strong></summary>
   <ol type="I">
@@ -249,9 +287,11 @@
     <li>Elemento romano III</li>
   </ol>
 </details>
+    </section>
 
-<hr>
+    <hr>
 
+    <section aria-label="Fuentes y caracteres especiales" id="sec-entities">
 <details>
   <summary><strong>🖋️ Fuentes y caracteres especiales</strong></summary>
   <address>
@@ -262,10 +302,13 @@
   <p>Entidades HTML: &copy; &reg; &trade; &euro; &yen; &pound; &larr; &rarr; &uarr; &darr; &infin; &sum; &radic; &pi; &Omega; &alpha; &beta; &ne; &le; &ge; &plusmn;</p>
   <ruby>漢字<rp>(</rp><rt>kan-ji</rt><rp>)</rp></ruby> — anotación fonética nativa
 </details>
+    </section>
 
-<hr>
+  </main>
 
-<p><small><em>Todo lo que ves arriba es 100% HTML puro. Sin una sola línea de CSS ni JavaScript.</em></small></p>
+  <footer>
+    <p><small><em>Todo lo que ves arriba es 100% HTML puro. Sin una sola línea de CSS ni JavaScript.</em></small></p>
+  </footer>
 
 </body>
 </html>
