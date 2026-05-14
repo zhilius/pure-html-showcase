@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to use HTML entities, special characters, and the ruby element - complete guide with code examples.">
+  <title>Fonts & Special Characters — Pure HTML Showcase</title>
+</head>
+<body>
+
+  <a href="../index.html">&larr; Back to main page</a>
+
+  <header>
+    <h1>Fonts &amp; Special Characters</h1>
+    <p>How to use HTML entities, special characters, and phonetic annotations.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>HTML Entities</h2>
+      <p>HTML entities let you display reserved characters and special symbols:</p>
+      <pre><code>&amp;copy;  — ©
+&amp;reg;   — ®
+&amp;trade; — ™
+&amp;euro;  — €
+&amp;yen;   — ¥
+&amp;pound; — £
+&amp;larr;  — ←
+&amp;rarr;  — →
+&amp;infin; — ∞
+&amp;sum;   — ∑
+&amp;radic; — √
+&amp;pi;    — π
+&amp;Omega; — Ω
+&amp;alpha; — α
+&amp;beta;  — β
+&amp;ne;    — ≠
+&amp;le;    — ≤
+&amp;ge;    — ≥
+&amp;plusmn;— ±</code></pre>
+    </section>
+
+    <section>
+      <h2>Address &amp; Time Elements</h2>
+      <pre><code>&lt;address&gt;
+  Built by &lt;a href="mailto:hello@example.com"&gt;Ada Lovelace&lt;/a&gt;&lt;br&gt;
+  Buenos Aires, Argentina&lt;br&gt;
+  &lt;time datetime="2026-05-13"&gt;May 13, 2026&lt;/time&gt;
+&lt;/address&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Ruby Annotation</h2>
+      <p>The <code>&lt;ruby&gt;</code> element provides phonetic annotations for East Asian typography:</p>
+      <pre><code>&lt;ruby&gt;
+  漢字&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;kan-ji&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+&lt;/ruby&gt;</code></pre>
+      <p><strong>Live demo:</strong> <ruby>漢字<rp>(</rp><rt>kan-ji</rt><rp>)</rp></ruby></p>
+      <ul>
+        <li><code>&lt;ruby&gt;</code> — the container</li>
+        <li><code>&lt;rt&gt;</code> — the pronunciation annotation</li>
+        <li><code>&lt;rp&gt;</code> — fallback parentheses for browsers that don't support ruby</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="../index.html">&larr; Back to main page</a></p>
+    <p><small><em>Pure HTML Showcase — No CSS, no JavaScript.</em></small></p>
+  </footer>
+
+</body>
+</html>

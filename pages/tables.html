@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to create HTML tables with all native elements - complete guide with code examples.">
+  <title>Tables & Data — Pure HTML Showcase</title>
+</head>
+<body>
+
+  <a href="../index.html">&larr; Back to main page</a>
+
+  <header>
+    <h1>Tables &amp; Data</h1>
+    <p>How to structure tabular data using only HTML.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>HTML Table Structure</h2>
+      <p>Tables in HTML are built from rows (<code>&lt;tr&gt;</code>) and cells (<code>&lt;td&gt;</code> for data, <code>&lt;th&gt;</code> for headers). The full structure includes:</p>
+      <pre><code>&lt;table border="1" cellpadding="8"&gt;
+  &lt;caption&gt;Most Used Languages in 2026&lt;/caption&gt;
+  &lt;colgroup&gt;
+    &lt;col&gt;
+    &lt;col&gt;
+    &lt;col&gt;
+  &lt;/colgroup&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;Language&lt;/th&gt;
+      &lt;th scope="col"&gt;Popularity&lt;/th&gt;
+      &lt;th scope="col"&gt;Type&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Python&lt;/td&gt;
+      &lt;td&gt;96%&lt;/td&gt;
+      &lt;td&gt;General / AI&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td colspan="3"&gt;Source: TIOBE 2026&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Key Table Elements</h2>
+      <ul>
+        <li><code>&lt;table&gt;</code> — the container</li>
+        <li><code>&lt;caption&gt;</code> — table title/description</li>
+        <li><code>&lt;colgroup&gt;</code> / <code>&lt;col&gt;</code> — column styling</li>
+        <li><code>&lt;thead&gt;</code> — header section</li>
+        <li><code>&lt;tbody&gt;</code> — body section</li>
+        <li><code>&lt;tfoot&gt;</code> — footer section</li>
+        <li><code>&lt;tr&gt;</code> — table row</li>
+        <li><code>&lt;th&gt;</code> — header cell (with <code>scope</code> attribute)</li>
+        <li><code>&lt;td&gt;</code> — data cell</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Attributes</h2>
+      <ul>
+        <li><code>border</code> — sets border width</li>
+        <li><code>cellpadding</code> — space inside cells</li>
+        <li><code>cellspacing</code> — space between cells</li>
+        <li><code>colspan</code> — merge columns</li>
+        <li><code>rowspan</code> — merge rows</li>
+        <li><code>scope="col"</code> / <code>scope="row"</code> — accessibility</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Live Demo</h2>
+      <table border="1" cellpadding="8" cellspacing="0" width="100%">
+        <caption>Most Used Languages in 2026</caption>
+        <colgroup>
+          <col>
+          <col>
+          <col>
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">Language</th>
+            <th scope="col">Popularity</th>
+            <th scope="col">Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python</td>
+            <td>96%</td>
+            <td>General / AI</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>91%</td>
+            <td>Web</td>
+          </tr>
+          <tr>
+            <td>TypeScript</td>
+            <td>88%</td>
+            <td>Web</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>78%</td>
+            <td>Enterprise</td>
+          </tr>
+          <tr>
+            <td>C#</td>
+            <td>73%</td>
+            <td>Enterprise</td>
+          </tr>
+          <tr>
+            <td>C++</td>
+            <td>70%</td>
+            <td>Systems</td>
+          </tr>
+          <tr>
+            <td>Go</td>
+            <td>60%</td>
+            <td>Cloud / Backend</td>
+          </tr>
+          <tr>
+            <td>Rust</td>
+            <td>52%</td>
+            <td>Systems</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><em>Source: TIOBE, GitHub Octoverse &amp; Stack Overflow — 2026</em></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="../index.html">&larr; Back to main page</a></p>
+    <p><small><em>Pure HTML Showcase — No CSS, no JavaScript.</em></small></p>
+  </footer>
+
+</body>
+</html>

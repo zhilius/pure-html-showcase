@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to create native HTML forms without CSS or JavaScript - complete guide with code examples.">
+  <title>Native Forms — Pure HTML Showcase</title>
+</head>
+<body>
+
+  <a href="../index.html">&larr; Back to main page</a>
+
+  <header>
+    <h1>Native Interactive Form</h1>
+    <p>How to build a fully functional form using only HTML.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>What is a Native HTML Form?</h2>
+      <p>HTML forms need no JavaScript or CSS to function. The browser provides all the interactivity: input validation, submission, reset, and more — all built-in.</p>
+    </section>
+
+    <section>
+      <h2>HTML Code</h2>
+      <pre><code>&lt;form action="#"&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;User Registration&lt;/legend&gt;
+
+    &lt;p&gt;
+      &lt;label for="name"&gt;Full Name:&lt;/label&gt;&lt;br&gt;
+      &lt;input type="text" id="name" name="name"
+             placeholder="Ada Lovelace" required autofocus&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;label for="email"&gt;Email:&lt;/label&gt;&lt;br&gt;
+      &lt;input type="email" id="email" name="email"
+             placeholder="ada@example.com" required&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;label for="pass"&gt;Password (min. 8 chars):&lt;/label&gt;&lt;br&gt;
+      &lt;input type="password" id="pass" name="pass" minlength="8" required&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;label for="age"&gt;Age (18–99):&lt;/label&gt;&lt;br&gt;
+      &lt;input type="number" id="age" name="age" min="18" max="99" value="25"&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      &lt;button type="submit"&gt;Create Account&lt;/button&gt;
+      &lt;button type="reset"&gt;Clear&lt;/button&gt;
+    &lt;/p&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Key HTML Elements Used</h2>
+      <ul>
+        <li><code>&lt;form&gt;</code> — container for interactive controls</li>
+        <li><code>&lt;fieldset&gt;</code> — groups related fields</li>
+        <li><code>&lt;legend&gt;</code> — caption for the fieldset</li>
+        <li><code>&lt;label&gt;</code> — associates text with an input</li>
+        <li><code>&lt;input&gt;</code> — the actual input control (text, email, password, number, date, color, range, checkbox, radio, file)</li>
+        <li><code>&lt;datalist&gt;</code> — provides autocomplete suggestions</li>
+        <li><code>&lt;textarea&gt;</code> — multi-line text input</li>
+        <li><code>&lt;button&gt;</code> — submit or reset the form</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Native Validation</h2>
+      <p>HTML provides built-in validation through attributes like:</p>
+      <ul>
+        <li><code>required</code> — field must be filled</li>
+        <li><code>minlength</code> / <code>maxlength</code> — text length limits</li>
+        <li><code>min</code> / <code>max</code> — numeric range limits</li>
+        <li><code>type="email"</code> — ensures valid email format</li>
+        <li><code>type="number"</code> — only accepts numbers</li>
+        <li><code>pattern</code> — regex-based validation</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Live Demo</h2>
+      <form action="#">
+        <fieldset>
+          <legend>User Registration</legend>
+          <p>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Ada Lovelace" required autofocus>
+          </p>
+          <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="ada@example.com" required>
+          </p>
+          <p>
+            <label for="pass">Password (min. 8 characters):</label><br>
+            <input type="password" id="pass" name="pass" minlength="8" required>
+          </p>
+          <p>
+            <label for="age">Age (18–99):</label><br>
+            <input type="number" id="age" name="age" min="18" max="99" value="25">
+          </p>
+          <p>
+            <button type="submit">Create Account</button>
+            <button type="reset">Clear</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="../index.html">&larr; Back to main page</a></p>
+    <p><small><em>Pure HTML Showcase — No CSS, no JavaScript.</em></small></p>
+  </footer>
+
+</body>
+</html>

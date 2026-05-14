@@ -1,163 +1,165 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Demostración del poder del HTML puro: formularios, multimedia, tablas, SVG, MathML y más — todo sin una sola línea de CSS ni JavaScript.">
+  <meta name="description" content="A showcase of pure HTML power: forms, multimedia, tables, SVG, MathML and more — all without a single line of CSS or JavaScript.">
   <meta name="author" content="Ada Lovelace">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#1a1a2e">
-  <title>HTML Puro Showcase — Demo sin CSS ni JavaScript</title>
+  <title>Pure HTML Showcase — Demo without CSS or JavaScript</title>
   <link rel="canonical" href="https://zhilius.github.io/pure-html-showcase/">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>">
   <link rel="preconnect" href="https://www.w3schools.com">
   <link rel="preconnect" href="https://placehold.co">
   <link rel="dns-prefetch" href="https://www.w3schools.com">
   <link rel="dns-prefetch" href="https://placehold.co">
-  <meta property="og:title" content="HTML Puro Showcase — Demo sin CSS ni JavaScript">
-  <meta property="og:description" content="Demostración del poder del HTML puro: formularios, multimedia, tablas, SVG, MathML y más — todo sin CSS ni JavaScript.">
+  <meta property="og:title" content="Pure HTML Showcase — Demo without CSS or JavaScript">
+  <meta property="og:description" content="A showcase of pure HTML power: forms, multimedia, tables, SVG, MathML and more — all without CSS or JavaScript.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://zhilius.github.io/pure-html-showcase/">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="HTML Puro Showcase — Demo sin CSS ni JavaScript">
-  <meta name="twitter:description" content="Demostración del poder del HTML puro: formularios, multimedia, tablas, SVG, MathML y más — todo sin CSS ni JavaScript.">
+  <meta name="twitter:title" content="Pure HTML Showcase — Demo without CSS or JavaScript">
+  <meta name="twitter:description" content="A showcase of pure HTML power: forms, multimedia, tables, SVG, MathML and more — all without CSS or JavaScript.">
 </head>
 <body>
 
-  <a href="#main-content">Saltar al contenido principal</a>
+  <a href="#main-content">Skip to main content</a>
 
   <header>
-    <h1>HTML Puro Showcase</h1>
-    <p>Demostración del poder del HTML puro, sin CSS ni JavaScript.</p>
-    <nav aria-label="Índice de contenidos">
+    <h1>Pure HTML Showcase</h1>
+    <p>A demonstration of the power of pure HTML, without CSS or JavaScript.</p>
+    <nav aria-label="Table of contents">
       <ol>
-        <li><a href="#sec-form"><p>Formulario interactivo nativo</p></a></li>
-        <li><a href="#sec-media"><p>Multimedia nativa</p></a></li>
-        <li><a href="#sec-tables"><p>Tablas y datos</p></a></li>
-        <li><a href="#sec-typo"><p>Tipografía y texto semántico</p></a></li>
-        <li><a href="#sec-map"><p>Mapa de imagen interactivo</p></a></li>
-        <li><a href="#sec-progress"><p>Progreso y métricas nativas</p></a></li>
-        <li><a href="#sec-dialog"><p>Diálogo nativo del navegador</p></a></li>
-        <li><a href="#sec-lists"><p>Listas y estructura</p></a></li>
-        <li><a href="#sec-entities"><p>Fuentes y caracteres especiales</p></a></li>
-        <li><a href="#sec-svg"><p>SVG inline nativo</p></a></li>
-        <li><a href="#sec-math"><p>Matemáticas con MathML</p></a></li>
-        <li><a href="#sec-picture"><p>Imágenes responsivas</p></a></li>
-        <li><a href="#sec-editable"><p>Edición en vivo</p></a></li>
-        <li><a href="#sec-optgroup"><p>Select con optgroup</p></a></li>
+        <li><a href="pages/form.html"><p>🔵 Native Interactive Form</p></a></li>
+        <li><a href="pages/media.html"><p>🎬 Native Multimedia</p></a></li>
+        <li><a href="pages/tables.html"><p>📊 Tables &amp; Data</p></a></li>
+        <li><a href="pages/typography.html"><p>📝 Typography &amp; Semantic Text</p></a></li>
+        <li><a href="pages/imagemap.html"><p>🗺️ Interactive Image Map</p></a></li>
+        <li><a href="pages/progress.html"><p>🔢 Native Progress &amp; Metrics</p></a></li>
+        <li><a href="pages/dialog.html"><p>💬 Native Browser Dialog</p></a></li>
+        <li><a href="pages/lists.html"><p>📋 Lists &amp; Structure</p></a></li>
+        <li><a href="pages/entities.html"><p>🖋️ Fonts &amp; Special Characters</p></a></li>
+        <li><a href="pages/svg.html"><p>🎨 Inline Native SVG</p></a></li>
+        <li><a href="pages/math.html"><p>∑ Mathematics with MathML</p></a></li>
+        <li><a href="pages/picture.html"><p>🖼️ Responsive Images</p></a></li>
+        <li><a href="pages/editable.html"><p>✏️ Live Editing</p></a></li>
+        <li><a href="pages/optgroup.html"><p>📑 Select with optgroup</p></a></li>
       </ol>
     </nav>
   </header>
 
   <main id="main-content">
 
-    <section aria-label="Formulario interactivo nativo" id="sec-form">
+    <section aria-label="Native Interactive Form" id="sec-form">
 <details open>
-  <summary><strong>🔵 Formulario interactivo nativo</strong></summary>
+  <summary><strong>🔵 Native Interactive Form</strong></summary>
   <form action="#">
     <fieldset>
-      <legend>Registro de usuario</legend>
+      <legend>User Registration</legend>
       <p>
-        <label for="nombre">Nombre completo:</label><br>
+        <label for="nombre">Full Name:</label><br>
         <input type="text" id="nombre" name="nombre" placeholder="Ada Lovelace" required autofocus>
       </p>
       <p>
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="ada@ejemplo.com" required>
+        <input type="email" id="email" name="email" placeholder="ada@example.com" required>
       </p>
       <p>
-        <label for="pass">Contraseña (mín. 8 caracteres):</label><br>
+        <label for="pass">Password (min. 8 characters):</label><br>
         <input type="password" id="pass" name="pass" minlength="8" required>
       </p>
       <p>
-        <label for="edad">Edad (18–99):</label><br>
+        <label for="edad">Age (18–99):</label><br>
         <input type="number" id="edad" name="edad" min="18" max="99" value="25">
       </p>
       <p>
-        <label for="fecha">Fecha de nacimiento:</label><br>
+        <label for="fecha">Date of Birth:</label><br>
         <input type="date" id="fecha" name="fecha">
       </p>
       <p>
-        <label for="color">Color favorito:</label>
+        <label for="color">Favorite Color:</label>
         <input type="color" id="color" name="color" value="#cc3333">
       </p>
       <p>
-        <label for="volumen">Nivel de experiencia:</label><br>
+        <label for="volumen">Experience Level:</label><br>
         <input type="range" id="volumen" name="volumen" min="0" max="100" value="60">
       </p>
       <p>
-        <label for="pais">País:</label><br>
-        <input type="text" id="pais" name="pais" list="paises" placeholder="Escribí tu país...">
+        <label for="pais">Country:</label><br>
+        <input type="text" id="pais" name="pais" list="paises" placeholder="Type your country...">
         <datalist id="paises">
           <option value="Argentina">
-          <option value="México">
+          <option value="Mexico">
           <option value="Colombia">
-          <option value="España">
+          <option value="Spain">
           <option value="Chile">
-          <option value="Brasil">
+          <option value="Brazil">
           <option value="Uruguay">
-          <option value="Perú">
+          <option value="Peru">
         </datalist>
       </p>
       <p>
-        <label>Intereses:</label><br>
-        <label><input type="checkbox" name="int" value="tech"> Tecnología</label>
-        <label><input type="checkbox" name="int" value="ciencia"> Ciencia</label>
-        <label><input type="checkbox" name="int" value="arte"> Arte</label>
-        <label><input type="checkbox" name="int" value="musica"> Música</label>
+        <label>Interests:</label><br>
+        <label><input type="checkbox" name="int" value="tech"> Technology</label>
+        <label><input type="checkbox" name="int" value="science"> Science</label>
+        <label><input type="checkbox" name="int" value="art"> Art</label>
+        <label><input type="checkbox" name="int" value="music"> Music</label>
       </p>
       <p>
-        <label>Experiencia previa:</label><br>
-        <label><input type="radio" name="exp" value="ninguna"> Ninguna</label>
-        <label><input type="radio" name="exp" value="algo"> Algo</label>
-        <label><input type="radio" name="exp" value="experto" checked> Experto</label>
+        <label>Previous Experience:</label><br>
+        <label><input type="radio" name="exp" value="none"> None</label>
+        <label><input type="radio" name="exp" value="some"> Some</label>
+        <label><input type="radio" name="exp" value="expert" checked> Expert</label>
       </p>
       <p>
-        <label for="bio">Biografía breve:</label><br>
-        <textarea id="bio" name="bio" rows="3" cols="40" placeholder="Contanos algo sobre vos..."></textarea>
+        <label for="bio">Short Biography:</label><br>
+        <textarea id="bio" name="bio" rows="3" cols="40" placeholder="Tell us about yourself..."></textarea>
       </p>
       <p>
-        <label for="foto">Subir foto de perfil:</label><br>
+        <label for="foto">Upload Profile Picture:</label><br>
         <input type="file" id="foto" name="foto" accept="image/*">
       </p>
       <p>
-        <button type="submit">Crear cuenta</button>
-        <button type="reset">Limpiar</button>
+        <button type="submit">Create Account</button>
+        <button type="reset">Clear</button>
       </p>
     </fieldset>
   </form>
+  <p><a href="pages/form.html">Learn how this form works &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="Multimedia nativa" id="sec-media">
+    <section aria-label="Native Multimedia" id="sec-media">
 <details>
-  <summary><strong>🎬 Multimedia nativa</strong></summary>
+  <summary><strong>🎬 Native Multimedia</strong></summary>
   <p>
     <strong>Audio:</strong><br>
     <audio controls>
       <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
-      Tu navegador no soporta audio.
+      Your browser does not support audio.
     </audio>
   </p>
   <p>
     <strong>Video:</strong><br>
     <video controls width="320" height="180">
       <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      Tu navegador no soporta video.
+      Your browser does not support video.
     </video>
   </p>
+  <p><a href="pages/media.html">Learn how multimedia works &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="Tablas y datos" id="sec-tables">
+    <section aria-label="Tables and Data" id="sec-tables">
 <details>
-  <summary><strong>📊 Tablas y datos</strong></summary>
+  <summary><strong>📊 Tables &amp; Data</strong></summary>
   <table border="1" cellpadding="8" cellspacing="0" width="100%">
-    <caption>Lenguajes más usados en 2026</caption>
+    <caption>Most Used Languages in 2026</caption>
     <colgroup>
       <col>
       <col>
@@ -165,16 +167,16 @@
     </colgroup>
     <thead>
       <tr>
-        <th scope="col">Lenguaje</th>
-        <th scope="col">Popularidad</th>
-        <th scope="col">Tipo</th>
+        <th scope="col">Language</th>
+        <th scope="col">Popularity</th>
+        <th scope="col">Type</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>Python</td>
         <td><meter value="96" min="0" max="100" low="40" high="70" optimum="100">96%</meter> 96%</td>
-        <td>General / IA</td>
+        <td>General / AI</td>
       </tr>
       <tr>
         <td>JavaScript</td>
@@ -189,17 +191,17 @@
       <tr>
         <td>Java</td>
         <td><meter value="78" min="0" max="100" low="40" high="70" optimum="100">78%</meter> 78%</td>
-        <td>Empresarial</td>
+        <td>Enterprise</td>
       </tr>
       <tr>
         <td>C#</td>
         <td><meter value="73" min="0" max="100" low="40" high="70" optimum="100">73%</meter> 73%</td>
-        <td>Empresarial</td>
+        <td>Enterprise</td>
       </tr>
       <tr>
         <td>C++</td>
         <td><meter value="70" min="0" max="100" low="40" high="70" optimum="100">70%</meter> 70%</td>
-        <td>Sistemas</td>
+        <td>Systems</td>
       </tr>
       <tr>
         <td>Go</td>
@@ -209,141 +211,148 @@
       <tr>
         <td>Rust</td>
         <td><meter value="52" min="0" max="100" low="40" high="70" optimum="100">52%</meter> 52%</td>
-        <td>Sistemas</td>
+        <td>Systems</td>
       </tr>
     </tbody>
     <tfoot>
       <tr>
-        <td colspan="3"><em>Fuente: TIOBE, GitHub Octoverse y Stack Overflow — 2026</em></td>
+        <td colspan="3"><em>Source: TIOBE, GitHub Octoverse &amp; Stack Overflow — 2026</em></td>
       </tr>
     </tfoot>
   </table>
+  <p><a href="pages/tables.html">Learn how tables work &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="Tipografía y texto semántico" id="sec-typo">
+    <section aria-label="Typography and Semantic Text" id="sec-typo">
 <details>
-  <summary><strong>📝 Tipografía y texto semántico</strong></summary>
-  <p>El HTML tiene decenas de etiquetas de texto nativas:</p>
-  <p><mark>Texto resaltado</mark>, <del>texto tachado</del>, <ins>texto insertado</ins>, <abbr title="HyperText Markup Language">HTML</abbr>, <kbd>Ctrl+C</kbd>, <code>console.log("hola")</code>, <var>x²</var>, <samp>Error 404</samp></p>
-  <p><span>Texto grande</span> y <small>texto pequeño</small></p>
-  <p>Superíndice: x<sup>2</sup> &nbsp;|&nbsp; Subíndice: CO<sub>2</sub></p>
-  <p><strong>Negrita semántica</strong> y <em>énfasis semántico</em></p>
+  <summary><strong>📝 Typography &amp; Semantic Text</strong></summary>
+  <p>HTML has dozens of native text tags:</p>
+  <p><mark>Highlighted text</mark>, <del>deleted text</del>, <ins>inserted text</ins>, <abbr title="HyperText Markup Language">HTML</abbr>, <kbd>Ctrl+C</kbd>, <code>console.log("hello")</code>, <var>x²</var>, <samp>Error 404</samp></p>
+  <p><span>Big text</span> and <small>small text</small></p>
+  <p>Superscript: x<sup>2</sup> &nbsp;|&nbsp; Subscript: CO<sub>2</sub></p>
+  <p><strong>Semantic bold</strong> and <em>semantic emphasis</em></p>
   <blockquote cite="https://www.w3.org">
-    <p>"La web está diseñada para funcionar para todos, independientemente del hardware, software, idioma o habilidades."</p>
+    <p>"The web is designed to work for everyone, regardless of hardware, software, language, or ability."</p>
     <footer>— Tim Berners-Lee</footer>
   </blockquote>
   <figure>
-    <figcaption>Función de saludo en JavaScript</figcaption>
-    <pre><code>function saludo(nombre) {
-  return `Hola, ${nombre}!`;
+    <figcaption>JavaScript greeting function</figcaption>
+    <pre><code>function greet(name) {
+  return `Hello, ${name}!`;
 }</code></pre>
   </figure>
-  <p>Definición nativa:</p>
+  <p>Native definition list:</p>
   <dl>
     <dt>HTML</dt>
-    <dd>Lenguaje de marcado para estructurar contenido web.</dd>
+    <dd>Markup language for structuring web content.</dd>
     <dt>CSS</dt>
-    <dd>Lenguaje para estilizar páginas web.</dd>
+    <dd>Language for styling web pages.</dd>
     <dt>JavaScript</dt>
-    <dd>Lenguaje de programación para la web.</dd>
+    <dd>Programming language for the web.</dd>
   </dl>
+  <p><a href="pages/typography.html">Learn how typography works &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="Mapa de imagen interactivo" id="sec-map">
+    <section aria-label="Interactive Image Map" id="sec-map">
 <details>
-  <summary><strong>🗺️ Mapa de imagen interactivo</strong></summary>
-  <p>Clickeá una zona del rectángulo:</p>
-  <img src="https://placehold.co/400x150/e8f4fd/1a73e8?text=Mapa+Interactivo" usemap="#mapa" width="400" height="150" loading="lazy" alt="Mapa de área interactivo con tres zonas">
+  <summary><strong>🗺️ Interactive Image Map</strong></summary>
+  <p>Click a zone on the rectangle:</p>
+  <img src="https://placehold.co/400x150/e8f4fd/1a73e8?text=Interactive+Map" usemap="#mapa" width="400" height="150" loading="lazy" alt="Interactive area map with three zones">
   <map name="mapa">
-    <area shape="rect" coords="0,0,133,150" href="#sec-form" alt="Formulario interactivo" title="Ir al formulario">
-    <area shape="rect" coords="134,0,266,150" href="#sec-media" alt="Multimedia nativa" title="Ir a multimedia">
-    <area shape="rect" coords="267,0,400,150" href="#sec-tables" alt="Tablas y datos" title="Ir a tablas">
+    <area shape="rect" coords="0,0,133,150" href="#sec-form" alt="Interactive form" title="Go to form">
+    <area shape="rect" coords="134,0,266,150" href="#sec-media" alt="Native multimedia" title="Go to multimedia">
+    <area shape="rect" coords="267,0,400,150" href="#sec-tables" alt="Tables and data" title="Go to tables">
   </map>
   <ol>
-    <li>Zona izquierda — Formulario interactivo</li>
-    <li>Zona central — Multimedia nativa</li>
-    <li>Zona derecha — Tablas y datos</li>
+    <li>Left zone — Interactive form</li>
+    <li>Center zone — Native multimedia</li>
+    <li>Right zone — Tables and data</li>
   </ol>
+  <p><a href="pages/imagemap.html">Learn how image maps work &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="Progreso y métricas nativas" id="sec-progress">
+    <section aria-label="Native Progress and Metrics" id="sec-progress">
 <details>
-  <summary><strong>🔢 Progreso y métricas nativas</strong></summary>
-  <p>Carga del sistema: <progress value="72" max="100">72%</progress> 72%</p>
-  <p>Batería: <meter value="0.3" min="0" max="1" low="0.25" high="0.75" optimum="1">30%</meter> 30% (baja)</p>
-  <p>Temperatura: <meter value="38.5" min="35" max="42" low="37" high="39" optimum="36.5">38.5°C</meter> 38.5°C</p>
+  <summary><strong>🔢 Native Progress &amp; Metrics</strong></summary>
+  <p>System load: <progress value="72" max="100">72%</progress> 72%</p>
+  <p>Battery: <meter value="0.3" min="0" max="1" low="0.25" high="0.75" optimum="1">30%</meter> 30% (low)</p>
+  <p>Temperature: <meter value="38.5" min="35" max="42" low="37" high="39" optimum="36.5">38.5°C</meter> 38.5°C</p>
+  <p><a href="pages/progress.html">Learn how progress &amp; metrics work &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="Diálogo nativo del navegador" id="sec-dialog">
+    <section aria-label="Native Browser Dialog" id="sec-dialog">
 <details>
-  <summary><strong>💬 Diálogo nativo del navegador</strong></summary>
-  <p>El elemento <code>&lt;dialog&gt;</code> es un modal 100% HTML nativo:</p>
+  <summary><strong>💬 Native Browser Dialog</strong></summary>
+  <p>The <code>&lt;dialog&gt;</code> element is a 100% native HTML modal:</p>
   <dialog open>
-    <h2>¡Soy un &lt;dialog&gt; nativo!</h2>
-    <p>Sin JavaScript, sin CSS: solo HTML puro.</p>
+    <h2>I'm a native &lt;dialog&gt;!</h2>
+    <p>No JavaScript, no CSS: just pure HTML.</p>
     <form method="dialog">
-      <button>Cerrar</button>
+      <button>Close</button>
     </form>
   </dialog>
+  <p><a href="pages/dialog.html">Learn how the dialog element works &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="Listas y estructura" id="sec-lists">
+    <section aria-label="Lists and Structure" id="sec-lists">
 <details>
-  <summary><strong>📋 Listas y estructura</strong></summary>
+  <summary><strong>📋 Lists &amp; Structure</strong></summary>
   <ol type="I">
-    <li>Elemento romano I
+    <li>Roman item I
       <ul>
-        <li>Sub-elemento A
+        <li>Sub-item A
           <ul type="circle">
             <li>Sub-sub A1</li>
             <li>Sub-sub A2</li>
           </ul>
         </li>
-        <li>Sub-elemento B</li>
+        <li>Sub-item B</li>
       </ul>
     </li>
-    <li>Elemento romano II</li>
-    <li>Elemento romano III</li>
+    <li>Roman item II</li>
+    <li>Roman item III</li>
   </ol>
+  <p><a href="pages/lists.html">Learn how lists work &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="Fuentes y caracteres especiales" id="sec-entities">
+    <section aria-label="Fonts and Special Characters" id="sec-entities">
 <details>
-  <summary><strong>🖋️ Fuentes y caracteres especiales</strong></summary>
+  <summary><strong>🖋️ Fonts &amp; Special Characters</strong></summary>
   <address>
-    Desarrollado por <a href="mailto:hola@ejemplo.com">Ada Lovelace</a><br>
+    Built by <a href="mailto:hello@example.com">Ada Lovelace</a><br>
     Buenos Aires, Argentina<br>
-    <time datetime="2026-05-13">13 de mayo, 2026</time>
+    <time datetime="2026-05-13">May 13, 2026</time>
   </address>
-  <p>Entidades HTML: &copy; &reg; &trade; &euro; &yen; &pound; &larr; &rarr; &uarr; &darr; &infin; &sum; &radic; &pi; &Omega; &alpha; &beta; &ne; &le; &ge; &plusmn;</p>
-  <ruby>漢字<rp>(</rp><rt>kan-ji</rt><rp>)</rp></ruby> — anotación fonética nativa
+  <p>HTML entities: &copy; &reg; &trade; &euro; &yen; &pound; &larr; &rarr; &uarr; &darr; &infin; &sum; &radic; &pi; &Omega; &alpha; &beta; &ne; &le; &ge; &plusmn;</p>
+  <ruby>漢字<rp>(</rp><rt>kan-ji</rt><rp>)</rp></ruby> — native phonetic annotation
+  <p><a href="pages/entities.html">Learn how entities work &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="SVG inline nativo" id="sec-svg">
+    <section aria-label="Inline Native SVG" id="sec-svg">
 <details>
-  <summary><strong>🎨 SVG inline — gráficos vectoriales sin imágenes externas</strong></summary>
-  <p>SVG funciona directamente en HTML, sin CSS ni JavaScript:</p>
+  <summary><strong>🎨 Inline SVG — Vector Graphics Without External Images</strong></summary>
+  <p>SVG works directly in HTML, without CSS or JavaScript:</p>
   <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -358,20 +367,21 @@
     <rect x="10" y="10" width="100" height="100" fill="url(#grad1)" rx="15"/>
     <circle cx="200" cy="60" r="50" fill="url(#grad2)" stroke="#333" stroke-width="3"/>
     <polygon points="320,110 370,10 370,110" fill="#6c5ce7" opacity="0.85"/>
-    <text x="200" y="150" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#333">SVG puro — formas, degradados, texto</text>
+    <text x="200" y="150" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#333">Pure SVG — shapes, gradients, text</text>
     <rect x="360" y="10" width="30" height="30" fill="#a29bfe" rx="5">
       <animate attributeName="y" values="10;140;10" dur="3s" repeatCount="indefinite"/>
     </rect>
   </svg>
+  <p><a href="pages/svg.html">Learn how inline SVG works &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="Matemáticas con MathML" id="sec-math">
+    <section aria-label="Mathematics with MathML" id="sec-math">
 <details>
-  <summary><strong>∑ MathML — fórmulas matemáticas renderizadas por el navegador</strong></summary>
-  <p>Fórmula cuadrática:</p>
+  <summary><strong>∑ MathML — Math Formulas Rendered by the Browser</strong></summary>
+  <p>Quadratic formula:</p>
   <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
     <mrow>
       <mi>x</mi>
@@ -401,7 +411,7 @@
       </mfrac>
     </mrow>
   </math>
-  <p>Integral definida:</p>
+  <p>Definite integral:</p>
   <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
     <mrow>
       <msubsup>
@@ -417,43 +427,46 @@
       <mi>x</mi>
     </mrow>
   </math>
+  <p><a href="pages/math.html">Learn how MathML works &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="Imágenes responsivas" id="sec-picture">
+    <section aria-label="Responsive Images" id="sec-picture">
 <details>
-  <summary><strong>🖼️ Picture — imágenes responsivas sin CSS</strong></summary>
-  <p>El elemento <code>&lt;picture&gt;</code> elige la imagen según el tamaño de pantalla:</p>
+  <summary><strong>🖼️ Picture — Responsive Images Without CSS</strong></summary>
+  <p>The <code>&lt;picture&gt;</code> element selects the image based on screen size:</p>
   <picture>
     <source media="(min-width: 800px)" srcset="https://placehold.co/800x150/1a1a2e/e8f4fd?text=Desktop:+800px">
     <source media="(min-width: 400px)" srcset="https://placehold.co/400x150/16213e/e8f4fd?text=Tablet:+400px">
-    <img src="https://placehold.co/200x150/0f3460/e8f4fd?text=Mobile:+200px" loading="lazy" alt="Ejemplo de imagen responsiva que cambia según el ancho de la pantalla">
+    <img src="https://placehold.co/200x150/0f3460/e8f4fd?text=Mobile:+200px" loading="lazy" alt="Example of responsive image that changes based on screen width">
   </picture>
+  <p><a href="pages/picture.html">Learn how responsive images work &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="Edición en vivo" id="sec-editable">
+    <section aria-label="Live Editing" id="sec-editable">
 <details>
-  <summary><strong>✏️ Contenteditable — edición de texto en vivo</strong></summary>
-  <p>Hacé clic en el texto de abajo y editálo directamente. <strong>No necesita JavaScript</strong>, es HTML nativo:</p>
-  <blockquote contenteditable="true" spellcheck="true" cite="https://ejemplo.com">
-    <p>Este texto se puede editar directamente en el navegador. ¡Probá escribir lo que quieras!</p>
+  <summary><strong>✏️ Contenteditable — Live Text Editing</strong></summary>
+  <p>Click the text below and edit it directly. <strong>No JavaScript needed</strong>, it's native HTML:</p>
+  <blockquote contenteditable="true" spellcheck="true" cite="https://example.com">
+    <p>This text can be edited directly in the browser. Try typing whatever you want!</p>
   </blockquote>
+  <p><a href="pages/editable.html">Learn how contenteditable works &rarr;</a></p>
 </details>
     </section>
 
     <hr>
 
-    <section aria-label="Select con optgroup" id="sec-optgroup">
+    <section aria-label="Select with optgroup" id="sec-optgroup">
 <details>
-  <summary><strong>📑 Select con optgroup — opciones agrupadas</strong></summary>
-  <p><code>&lt;optgroup&gt;</code> organiza opciones dentro de un <code>&lt;select&gt;</code>:</p>
+  <summary><strong>📑 Select with optgroup — Grouped Options</strong></summary>
+  <p><code>&lt;optgroup&gt;</code> organizes options inside a <code>&lt;select&gt;</code>:</p>
   <p>
-    <label for="lenguaje_fav">Elegí tu lenguaje favorito:</label><br>
+    <label for="lenguaje_fav">Choose your favorite language:</label><br>
     <select id="lenguaje_fav" name="lenguaje_fav">
       <optgroup label="Web">
         <option value="html">HTML</option>
@@ -473,6 +486,7 @@
       </optgroup>
     </select>
   </p>
+  <p><a href="pages/optgroup.html">Learn how optgroup works &rarr;</a></p>
 </details>
     </section>
 
@@ -481,7 +495,7 @@
   </main>
 
   <footer>
-    <p><small><em>Todo lo que ves arriba es 100% HTML puro. Sin una sola línea de CSS ni JavaScript.</em></small></p>
+    <p><small><em>Everything you see above is 100% pure HTML. Not a single line of CSS or JavaScript.</em></small></p>
   </footer>
 
 </body>

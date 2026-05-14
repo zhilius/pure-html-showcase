@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to group select options using the HTML optgroup element - complete guide with code examples.">
+  <title>Select with optgroup — Pure HTML Showcase</title>
+</head>
+<body>
+
+  <a href="../index.html">&larr; Back to main page</a>
+
+  <header>
+    <h1>Select with optgroup — Grouped Options</h1>
+    <p>How to organize select menu options into groups using only HTML.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>What is optgroup?</h2>
+      <p>The <code>&lt;optgroup&gt;</code> element groups related options inside a <code>&lt;select&gt;</code> dropdown. Each group gets a visible label, making long lists easier to navigate.</p>
+    </section>
+
+    <section>
+      <h2>HTML Code</h2>
+      <pre><code>&lt;label for="language"&gt;
+  Choose your favorite language:
+&lt;/label&gt;&lt;br&gt;
+
+&lt;select id="language" name="language"&gt;
+
+  &lt;optgroup label="Web"&gt;
+    &lt;option value="html"&gt;HTML&lt;/option&gt;
+    &lt;option value="css"&gt;CSS&lt;/option&gt;
+    &lt;option value="js"&gt;JavaScript&lt;/option&gt;
+    &lt;option value="ts"&gt;TypeScript&lt;/option&gt;
+  &lt;/optgroup&gt;
+
+  &lt;optgroup label="Backend"&gt;
+    &lt;option value="python"&gt;Python&lt;/option&gt;
+    &lt;option value="java"&gt;Java&lt;/option&gt;
+    &lt;option value="go"&gt;Go&lt;/option&gt;
+    &lt;option value="rust"&gt;Rust&lt;/option&gt;
+  &lt;/optgroup&gt;
+
+  &lt;optgroup label="Mobile"&gt;
+    &lt;option value="kotlin"&gt;Kotlin&lt;/option&gt;
+    &lt;option value="swift"&gt;Swift&lt;/option&gt;
+  &lt;/optgroup&gt;
+
+&lt;/select&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Key Attributes</h2>
+      <ul>
+        <li><code>optgroup label="Group Name"</code> — the visible group heading (disabled, not selectable)</li>
+        <li><code>option value="..."</code> — the actual selectable option</li>
+        <li><code>selected</code> — pre-selects an option</li>
+        <li><code>disabled</code> — disables an option or entire group</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Live Demo</h2>
+      <p>
+        <label for="language">Choose your favorite language:</label><br>
+        <select id="language" name="language">
+          <optgroup label="Web">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="ts">TypeScript</option>
+          </optgroup>
+          <optgroup label="Backend">
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="go">Go</option>
+            <option value="rust">Rust</option>
+          </optgroup>
+          <optgroup label="Mobile">
+            <option value="kotlin">Kotlin</option>
+            <option value="swift">Swift</option>
+          </optgroup>
+        </select>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="../index.html">&larr; Back to main page</a></p>
+    <p><small><em>Pure HTML Showcase — No CSS, no JavaScript.</em></small></p>
+  </footer>
+
+</body>
+</html>

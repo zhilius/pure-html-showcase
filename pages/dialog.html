@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to use the native HTML dialog element - complete guide with code examples.">
+  <title>Native Browser Dialog — Pure HTML Showcase</title>
+</head>
+<body>
+
+  <a href="../index.html">&larr; Back to main page</a>
+
+  <header>
+    <h1>Native Browser Dialog</h1>
+    <p>How to create modal dialogs using only the HTML <code>&lt;dialog&gt;</code> element.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>What is the Dialog Element?</h2>
+      <p>The <code>&lt;dialog&gt;</code> element creates a native modal or non-modal dialog box. It's fully functional with just HTML — no JavaScript required.</p>
+    </section>
+
+    <section>
+      <h2>HTML Code</h2>
+      <pre><code>&lt;dialog open&gt;
+  &lt;h2&gt;I'm a native dialog!&lt;/h2&gt;
+  &lt;p&gt;No JavaScript, no CSS: just pure HTML.&lt;/p&gt;
+  &lt;form method="dialog"&gt;
+    &lt;button&gt;Close&lt;/button&gt;
+  &lt;/form&gt;
+&lt;/dialog&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Key Attributes &amp; Behavior</h2>
+      <ul>
+        <li><code>open</code> — makes the dialog visible (without it, the dialog is hidden)</li>
+        <li><code>method="dialog"</code> — on a form inside a dialog, this closes the dialog when submitted</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Live Demo</h2>
+      <dialog open>
+        <h2>I'm a native &lt;dialog&gt;!</h2>
+        <p>No JavaScript, no CSS: just pure HTML.</p>
+        <form method="dialog">
+          <button>Close</button>
+        </form>
+      </dialog>
+      <p>Note: The dialog above is open by default. Click "Close" to dismiss it (the <code>method="dialog"</code> on the form handles this natively).</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="../index.html">&larr; Back to main page</a></p>
+    <p><small><em>Pure HTML Showcase — No CSS, no JavaScript.</em></small></p>
+  </footer>
+
+</body>
+</html>

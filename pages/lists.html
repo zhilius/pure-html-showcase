@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to create HTML lists with ordered, unordered, and nested structures - complete guide with code examples.">
+  <title>Lists & Structure — Pure HTML Showcase</title>
+</head>
+<body>
+
+  <a href="../index.html">&larr; Back to main page</a>
+
+  <header>
+    <h1>Lists &amp; Structure</h1>
+    <p>How to create ordered, unordered, and nested lists using only HTML.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Types of Lists</h2>
+      <p>HTML provides three types of lists:</p>
+      <ul>
+        <li><code>&lt;ul&gt;</code> — unordered (bulleted) list</li>
+        <li><code>&lt;ol&gt;</code> — ordered (numbered) list</li>
+        <li><code>&lt;dl&gt;</code> — definition list (terms + descriptions)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ordered List with Roman Numerals</h2>
+      <pre><code>&lt;ol type="I"&gt;
+  &lt;li&gt;Roman item I
+    &lt;ul&gt;
+      &lt;li&gt;Sub-item A
+        &lt;ul type="circle"&gt;
+          &lt;li&gt;Sub-sub A1&lt;/li&gt;
+          &lt;li&gt;Sub-sub A2&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Sub-item B&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Roman item II&lt;/li&gt;
+  &lt;li&gt;Roman item III&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Ordered List Type Attributes</h2>
+      <ul>
+        <li><code>type="1"</code> — numbers (default)</li>
+        <li><code>type="A"</code> — uppercase letters</li>
+        <li><code>type="a"</code> — lowercase letters</li>
+        <li><code>type="I"</code> — uppercase Roman numerals</li>
+        <li><code>type="i"</code> — lowercase Roman numerals</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Unordered List Type Attributes</h2>
+      <ul>
+        <li><code>type="disc"</code> — filled circle (default)</li>
+        <li><code>type="circle"</code> — hollow circle</li>
+        <li><code>type="square"</code> — filled square</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Live Demo</h2>
+      <ol type="I">
+        <li>Roman item I
+          <ul>
+            <li>Sub-item A
+              <ul type="circle">
+                <li>Sub-sub A1</li>
+                <li>Sub-sub A2</li>
+              </ul>
+            </li>
+            <li>Sub-item B</li>
+          </ul>
+        </li>
+        <li>Roman item II</li>
+        <li>Roman item III</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="../index.html">&larr; Back to main page</a></p>
+    <p><small><em>Pure HTML Showcase — No CSS, no JavaScript.</em></small></p>
+  </footer>
+
+</body>
+</html>

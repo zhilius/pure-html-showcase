@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to use HTML semantic text elements for typography - complete guide with code examples.">
+  <title>Typography & Semantic Text — Pure HTML Showcase</title>
+</head>
+<body>
+
+  <a href="../index.html">&larr; Back to main page</a>
+
+  <header>
+    <h1>Typography &amp; Semantic Text</h1>
+    <p>How to use HTML's native text-formatting and semantic elements.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Semantic Text Elements</h2>
+      <p>HTML provides dozens of inline text elements that convey meaning — not just visual style:</p>
+
+      <h3>Highlighting &amp; Changes</h3>
+      <pre><code>&lt;mark&gt;highlighted&lt;/mark&gt;
+&lt;del&gt;deleted text&lt;/del&gt;
+&lt;ins&gt;inserted text&lt;/ins&gt;</code></pre>
+
+      <h3>Technical / Code</h3>
+      <pre><code>&lt;code&gt;console.log("hello")&lt;/code&gt;
+&lt;kbd&gt;Ctrl+C&lt;/kbd&gt;
+&lt;samp&gt;Error 404&lt;/samp&gt;
+&lt;var&gt;x²&lt;/var&gt;</code></pre>
+
+      <h3>Abbreviations &amp; Quotes</h3>
+      <pre><code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+&lt;blockquote cite="https://www.w3.org"&gt;
+  &lt;p&gt;Quote text here.&lt;/p&gt;
+  &lt;footer&gt;— Author&lt;/footer&gt;
+&lt;/blockquote&gt;</code></pre>
+
+      <h3>Superscript &amp; Subscript</h3>
+      <pre><code>x&lt;sup&gt;2&lt;/sup&gt;   (superscript)
+CO&lt;sub&gt;2&lt;/sub&gt;  (subscript)</code></pre>
+    </section>
+
+    <section>
+      <h2>Definition Lists</h2>
+      <pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;Markup language for structuring web content.&lt;/dd&gt;
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt;Language for styling web pages.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Code Blocks with &lt;pre&gt;</h2>
+      <pre><code>&lt;figure&gt;
+  &lt;figcaption&gt;JavaScript greeting function&lt;/figcaption&gt;
+  &lt;pre&gt;&lt;code&gt;function greet(name) {
+  return `Hello, ${name}!`;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/figure&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Live Demo</h2>
+      <p><mark>Highlighted text</mark>, <del>deleted text</del>, <ins>inserted text</ins>, <abbr title="HyperText Markup Language">HTML</abbr>, <kbd>Ctrl+C</kbd>, <code>console.log("hello")</code>, <var>x²</var>, <samp>Error 404</samp></p>
+      <p>Superscript: x<sup>2</sup> &nbsp;|&nbsp; Subscript: CO<sub>2</sub></p>
+      <p><strong>Semantic bold</strong> and <em>semantic emphasis</em></p>
+      <blockquote cite="https://www.w3.org">
+        <p>"The web is designed to work for everyone, regardless of hardware, software, language, or ability."</p>
+        <footer>— Tim Berners-Lee</footer>
+      </blockquote>
+      <figure>
+        <figcaption>JavaScript greeting function</figcaption>
+        <pre><code>function greet(name) {
+  return `Hello, ${name}!`;
+}</code></pre>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="../index.html">&larr; Back to main page</a></p>
+    <p><small><em>Pure HTML Showcase — No CSS, no JavaScript.</em></small></p>
+  </footer>
+
+</body>
+</html>

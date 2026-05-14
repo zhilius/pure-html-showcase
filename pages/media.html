@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to embed audio and video using only native HTML elements - complete guide with code examples.">
+  <title>Native Multimedia — Pure HTML Showcase</title>
+</head>
+<body>
+
+  <a href="../index.html">&larr; Back to main page</a>
+
+  <header>
+    <h1>Native Multimedia</h1>
+    <p>How to embed audio and video using only HTML.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>What are Native Multimedia Elements?</h2>
+      <p>HTML5 introduced <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements that let you embed media directly in the browser without plugins or JavaScript.</p>
+    </section>
+
+    <section>
+      <h2>Audio Element</h2>
+      <pre><code>&lt;audio controls&gt;
+  &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+  Your browser does not support audio.
+&lt;/audio&gt;</code></pre>
+      <p>The <code>controls</code> attribute adds play/pause, volume, and timeline controls natively.</p>
+      <p><strong>Live demo:</strong></p>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Video Element</h2>
+      <pre><code>&lt;video controls width="320" height="180"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Your browser does not support video.
+&lt;/video&gt;</code></pre>
+      <p>You can set <code>width</code> and <code>height</code> directly on the element. The <code>controls</code> attribute provides native playback controls.</p>
+      <p><strong>Live demo:</strong></p>
+      <video controls width="320" height="180">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+    </section>
+
+    <section>
+      <h2>Key Attributes</h2>
+      <ul>
+        <li><code>controls</code> — show native playback controls</li>
+        <li><code>autoplay</code> — start playback automatically</li>
+        <li><code>loop</code> — loop the media</li>
+        <li><code>muted</code> — start muted</li>
+        <li><code>poster</code> (video only) — thumbnail before playback</li>
+        <li><code>preload</code> — hint for preloading (none/metadata/auto)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Multiple Sources</h2>
+      <p>You can provide multiple <code>&lt;source&gt;</code> elements for different formats. The browser will use the first one it supports:</p>
+      <pre><code>&lt;video controls&gt;
+  &lt;source src="video.webm" type="video/webm"&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  &lt;source src="video.ogg" type="video/ogg"&gt;
+  Your browser does not support video.
+&lt;/video&gt;</code></pre>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="../index.html">&larr; Back to main page</a></p>
+    <p><small><em>Pure HTML Showcase — No CSS, no JavaScript.</em></small></p>
+  </footer>
+
+</body>
+</html>

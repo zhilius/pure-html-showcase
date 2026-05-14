@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to render mathematical formulas using MathML in HTML - complete guide with code examples.">
+  <title>Mathematics with MathML — Pure HTML Showcase</title>
+</head>
+<body>
+
+  <a href="../index.html">&larr; Back to main page</a>
+
+  <header>
+    <h1>∑ MathML — Math Formulas Rendered by the Browser</h1>
+    <p>How to write mathematical notation using MathML, a native HTML math language.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>What is MathML?</h2>
+      <p>MathML (Mathematical Markup Language) lets you write mathematical formulas directly in HTML. The browser renders them natively — no images, no JavaScript.</p>
+    </section>
+
+    <section>
+      <h2>Quadratic Formula</h2>
+      <pre><code>&lt;math display="block"
+     xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+  &lt;mrow&gt;
+    &lt;mi&gt;x&lt;/mi&gt;
+    &lt;mo&gt;=&lt;/mo&gt;
+    &lt;mfrac&gt;
+      &lt;mrow&gt;
+        &lt;mo&gt;−&lt;/mo&gt;
+        &lt;mi&gt;b&lt;/mi&gt;
+        &lt;mo&gt;±&lt;/mo&gt;
+        &lt;msqrt&gt;
+          &lt;mrow&gt;
+            &lt;msup&gt;
+              &lt;mi&gt;b&lt;/mi&gt;
+              &lt;mn&gt;2&lt;/mn&gt;
+            &lt;/msup&gt;
+            &lt;mo&gt;−&lt;/mo&gt;
+            &lt;mn&gt;4&lt;/mn&gt;
+            &lt;mi&gt;a&lt;/mi&gt;
+            &lt;mi&gt;c&lt;/mi&gt;
+          &lt;/mrow&gt;
+        &lt;/msqrt&gt;
+      &lt;/mrow&gt;
+      &lt;mrow&gt;
+        &lt;mn&gt;2&lt;/mn&gt;
+        &lt;mi&gt;a&lt;/mi&gt;
+      &lt;/mrow&gt;
+    &lt;/mfrac&gt;
+  &lt;/mrow&gt;
+&lt;/math&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Key MathML Elements</h2>
+      <ul>
+        <li><code>&lt;math&gt;</code> — the container</li>
+        <li><code>&lt;mi&gt;</code> — identifier (variable)</li>
+        <li><code>&lt;mn&gt;</code> — number</li>
+        <li><code>&lt;mo&gt;</code> — operator (+, =, ∫, etc.)</li>
+        <li><code>&lt;mfrac&gt;</code> — fraction</li>
+        <li><code>&lt;msqrt&gt;</code> — square root</li>
+        <li><code>&lt;msup&gt;</code> / <code>&lt;msub&gt;</code> — superscript / subscript</li>
+        <li><code>&lt;msubsup&gt;</code> — both subscript and superscript (e.g., integrals)</li>
+        <li><code>&lt;mrow&gt;</code> — groups elements horizontally</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Live Demo: Quadratic Formula</h2>
+      <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+          <mi>x</mi>
+          <mo>=</mo>
+          <mfrac>
+            <mrow>
+              <mo>−</mo>
+              <mi>b</mi>
+              <mo>±</mo>
+              <msqrt>
+                <mrow>
+                  <msup>
+                    <mi>b</mi>
+                    <mn>2</mn>
+                  </msup>
+                  <mo>−</mo>
+                  <mn>4</mn>
+                  <mi>a</mi>
+                  <mi>c</mi>
+                </mrow>
+              </msqrt>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <mi>a</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </math>
+
+      <h2>Live Demo: Definite Integral</h2>
+      <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+          <msubsup>
+            <mo>∫</mo>
+            <mi>a</mi>
+            <mi>b</mi>
+          </msubsup>
+          <mi>f</mi>
+          <mo stretchy="false">(</mo>
+          <mi>x</mi>
+          <mo stretchy="false">)</mo>
+          <mi>d</mi>
+          <mi>x</mi>
+        </mrow>
+      </math>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="../index.html">&larr; Back to main page</a></p>
+    <p><small><em>Pure HTML Showcase — No CSS, no JavaScript.</em></small></p>
+  </footer>
+
+</body>
+</html>

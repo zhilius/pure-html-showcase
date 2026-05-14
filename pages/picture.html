@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to create responsive images using the HTML picture element - complete guide with code examples.">
+  <title>Responsive Images — Pure HTML Showcase</title>
+</head>
+<body>
+
+  <a href="../index.html">&larr; Back to main page</a>
+
+  <header>
+    <h1>Picture — Responsive Images Without CSS</h1>
+    <p>How to serve different images based on screen size using only HTML.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>What is the Picture Element?</h2>
+      <p>The <code>&lt;picture&gt;</code> element lets you define multiple image sources for different screen sizes, resolutions, or formats. The browser picks the best one — no CSS media queries needed.</p>
+    </section>
+
+    <section>
+      <h2>HTML Code</h2>
+      <pre><code>&lt;picture&gt;
+  &lt;source media="(min-width: 800px)"
+          srcset="desktop.jpg"&gt;
+
+  &lt;source media="(min-width: 400px)"
+          srcset="tablet.jpg"&gt;
+
+  &lt;img src="mobile.jpg"
+       loading="lazy"
+       alt="Description of the image"&gt;
+&lt;/picture&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>How It Works</h2>
+      <ol>
+        <li>The browser checks each <code>&lt;source&gt;</code> element from top to bottom</li>
+        <li>It uses the first one whose <code>media</code> attribute matches the current viewport</li>
+        <li>If no source matches, it falls back to the <code>&lt;img&gt;</code> element</li>
+        <li>The <code>&lt;img&gt;</code> is required and provides the <code>alt</code> text for accessibility</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Additional Features</h2>
+      <p>You can also use <code>type</code> to serve different image formats:</p>
+      <pre><code>&lt;picture&gt;
+  &lt;source type="image/webp" srcset="image.webp"&gt;
+  &lt;source type="image/jpeg" srcset="image.jpg"&gt;
+  &lt;img src="image.jpg" alt="Description"&gt;
+&lt;/picture&gt;</code></pre>
+      <p>This lets you serve modern formats like WebP or AVIF while falling back to JPEG for older browsers.</p>
+    </section>
+
+    <section>
+      <h2>Resize your browser to see the effect:</h2>
+      <picture>
+        <source media="(min-width: 800px)" srcset="https://placehold.co/800x150/1a1a2e/e8f4fd?text=Desktop:+800px">
+        <source media="(min-width: 400px)" srcset="https://placehold.co/400x150/16213e/e8f4fd?text=Tablet:+400px">
+        <img src="https://placehold.co/200x150/0f3460/e8f4fd?text=Mobile:+200px" loading="lazy" alt="Example of responsive image that changes based on screen width">
+      </picture>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="../index.html">&larr; Back to main page</a></p>
+    <p><small><em>Pure HTML Showcase — No CSS, no JavaScript.</em></small></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How to create interactive image maps using only HTML - complete guide with code examples.">
+  <title>Interactive Image Map — Pure HTML Showcase</title>
+</head>
+<body>
+
+  <a href="../index.html">&larr; Back to main page</a>
+
+  <header>
+    <h1>Interactive Image Map</h1>
+    <p>How to make clickable regions on an image using only HTML.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>What is an Image Map?</h2>
+      <p>An image map lets you define clickable areas (hotspots) on an image. Each area can link to a different URL or page section — no JavaScript needed.</p>
+    </section>
+
+    <section>
+      <h2>HTML Code</h2>
+      <pre><code>&lt;img src="image.png" usemap="#mymap"
+     width="400" height="150"
+     alt="Interactive map"&gt;
+
+&lt;map name="mymap"&gt;
+  &lt;area shape="rect"
+        coords="0,0,133,150"
+        href="#section1"
+        alt="Section 1"
+        title="Go to section 1"&gt;
+
+  &lt;area shape="rect"
+        coords="134,0,266,150"
+        href="#section2"
+        alt="Section 2"
+        title="Go to section 2"&gt;
+
+  &lt;area shape="rect"
+        coords="267,0,400,150"
+        href="#section3"
+        alt="Section 3"
+        title="Go to section 3"&gt;
+&lt;/map&gt;</code></pre>
+    </section>
+
+    <section>
+      <h2>Key Elements</h2>
+      <ul>
+        <li><code>&lt;img usemap="#name"&gt;</code> — connects the image to a map</li>
+        <li><code>&lt;map name="name"&gt;</code> — defines the clickable areas</li>
+        <li><code>&lt;area&gt;</code> — defines a single hotspot</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Area Shapes</h2>
+      <ul>
+        <li><code>rect</code> — rectangle (coords: x1,y1,x2,y2)</li>
+        <li><code>circle</code> — circle (coords: x,y,radius)</li>
+        <li><code>poly</code> — polygon (coords: x1,y1,x2,y2,x3,y3,...)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Live Demo</h2>
+      <img src="https://placehold.co/400x150/e8f4fd/1a73e8?text=Interactive+Map" usemap="#mapa" width="400" height="150" loading="lazy" alt="Interactive area map with three zones">
+      <map name="mapa">
+        <area shape="rect" coords="0,0,133,150" href="#form" alt="Interactive form" title="Go to form">
+        <area shape="rect" coords="134,0,266,150" href="#media" alt="Native multimedia" title="Go to multimedia">
+        <area shape="rect" coords="267,0,400,150" href="#tables" alt="Tables and data" title="Go to tables">
+      </map>
+      <ol>
+        <li>Left zone — Interactive form</li>
+        <li>Center zone — Native multimedia</li>
+        <li>Right zone — Tables and data</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><a href="../index.html">&larr; Back to main page</a></p>
+    <p><small><em>Pure HTML Showcase — No CSS, no JavaScript.</em></small></p>
+  </footer>
+
+</body>
+</html>
