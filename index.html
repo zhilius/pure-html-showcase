@@ -44,7 +44,6 @@
         <li><a href="#sec-math"><p>Matemáticas con MathML</p></a></li>
         <li><a href="#sec-picture"><p>Imágenes responsivas</p></a></li>
         <li><a href="#sec-editable"><p>Edición en vivo</p></a></li>
-        <li><a href="#sec-nested"><p>Details anidados</p></a></li>
         <li><a href="#sec-optgroup"><p>Select con optgroup</p></a></li>
       </ol>
     </nav>
@@ -449,29 +448,6 @@
 
     <hr>
 
-    <section aria-label="Details anidados" id="sec-nested">
-<details>
-  <summary><strong>🪆 Details anidados — acordeón recursivo</strong></summary>
-  <p>Los elementos <code>&lt;details&gt;</code> se pueden anidar infinitamente:</p>
-  <details>
-    <summary>📁 Nivel 1 — Proyecto</summary>
-    <p>Contenido del proyecto</p>
-    <details>
-      <summary>📁 Nivel 2 — src</summary>
-      <p>Código fuente</p>
-      <details>
-        <summary>📁 Nivel 3 — components</summary>
-        <p>Componentes del proyecto</p>
-        <details>
-          <summary>📄 Nivel 4 — App.html</summary>
-          <p>¡Llegaste al archivo! Puro HTML hasta el final.</p>
-        </details>
-      </details>
-    </details>
-  </details>
-</details>
-    </section>
-
     <section aria-label="Select con optgroup" id="sec-optgroup">
 <details>
   <summary><strong>📑 Select con optgroup — opciones agrupadas</strong></summary>
@@ -498,6 +474,10 @@
     </select>
   </p>
 </details>
+    </section>
+
+    <hr>
+
   </main>
 
   <footer>
