@@ -25,7 +25,3 @@ Demostración del poder del HTML puro — sin una sola línea de CSS ni JavaScri
 - **Accesibilidad**: skip-to-content, landmarks (main, header, nav, footer, section), aria-label, heading hierarchy, hidden attribute
 - **Performance**: lazy loading, preconnect, dns-prefetch
 - **Semántica HTML5**: elementos con significado estructural
-
-## Ver online
-
-https://zhilius.github.io/pure-html-showcase/
