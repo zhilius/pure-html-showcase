@@ -36,6 +36,11 @@
         <li><a href="#sec-dialog">Diálogo nativo del navegador</a></li>
         <li><a href="#sec-lists">Listas y estructura</a></li>
         <li><a href="#sec-entities">Fuentes y caracteres especiales</a></li>
+        <li><a href="#sec-svg">SVG inline nativo</a></li>
+        <li><a href="#sec-math">Matemáticas con MathML</a></li>
+        <li><a href="#sec-picture">Imágenes responsivas</a></li>
+        <li><a href="#sec-editable">Edición en vivo</a></li>
+        <li><a href="#sec-nested">Details anidados</a></li>
       </ol>
     </nav>
   </header>
@@ -301,6 +306,139 @@
   </address>
   <p>Entidades HTML: &copy; &reg; &trade; &euro; &yen; &pound; &larr; &rarr; &uarr; &darr; &infin; &sum; &radic; &pi; &Omega; &alpha; &beta; &ne; &le; &ge; &plusmn;</p>
   <ruby>漢字<rp>(</rp><rt>kan-ji</rt><rp>)</rp></ruby> — anotación fonética nativa
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="SVG inline nativo" id="sec-svg">
+<details>
+  <summary><strong>🎨 SVG inline — gráficos vectoriales sin imágenes externas</strong></summary>
+  <p>SVG funciona directamente en HTML, sin CSS ni JavaScript:</p>
+  <svg viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ff6b6b"/>
+        <stop offset="100%" stop-color="#4ecdc4"/>
+      </linearGradient>
+      <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#ffd93d"/>
+        <stop offset="100%" stop-color="#ff6b6b"/>
+      </linearGradient>
+    </defs>
+    <rect x="10" y="10" width="100" height="100" fill="url(#grad1)" rx="15"/>
+    <circle cx="200" cy="60" r="50" fill="url(#grad2)" stroke="#333" stroke-width="3"/>
+    <polygon points="320,110 370,10 370,110" fill="#6c5ce7" opacity="0.85"/>
+    <text x="200" y="150" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#333">SVG puro — formas, degradados, texto</text>
+    <rect x="360" y="10" width="30" height="30" fill="#a29bfe" rx="5">
+      <animate attributeName="y" values="10;140;10" dur="3s" repeatCount="indefinite"/>
+    </rect>
+  </svg>
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="Matemáticas con MathML" id="sec-math">
+<details>
+  <summary><strong>∑ MathML — fórmulas matemáticas renderizadas por el navegador</strong></summary>
+  <p>Fórmula cuadrática:</p>
+  <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+      <mi>x</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mrow>
+          <mo>−</mo>
+          <mi>b</mi>
+          <mo>±</mo>
+          <msqrt>
+            <mrow>
+              <msup>
+                <mi>b</mi>
+                <mn>2</mn>
+              </msup>
+              <mo>−</mo>
+              <mn>4</mn>
+              <mi>a</mi>
+              <mi>c</mi>
+            </mrow>
+          </msqrt>
+        </mrow>
+        <mrow>
+          <mn>2</mn>
+          <mi>a</mi>
+        </mrow>
+      </mfrac>
+    </mrow>
+  </math>
+  <p>Integral definida:</p>
+  <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+      <msubsup>
+        <mo>∫</mo>
+        <mi>a</mi>
+        <mi>b</mi>
+      </msubsup>
+      <mi>f</mi>
+      <mo stretchy="false">(</mo>
+      <mi>x</mi>
+      <mo stretchy="false">)</mo>
+      <mi>d</mi>
+      <mi>x</mi>
+    </mrow>
+  </math>
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="Imágenes responsivas" id="sec-picture">
+<details>
+  <summary><strong>🖼️ Picture — imágenes responsivas sin CSS</strong></summary>
+  <p>El elemento <code>&lt;picture&gt;</code> elige la imagen según el tamaño de pantalla:</p>
+  <picture>
+    <source media="(min-width: 800px)" srcset="https://placehold.co/800x150/1a1a2e/e8f4fd?text=Desktop:+800px">
+    <source media="(min-width: 400px)" srcset="https://placehold.co/400x150/16213e/e8f4fd?text=Tablet:+400px">
+    <img src="https://placehold.co/200x150/0f3460/e8f4fd?text=Mobile:+200px" alt="Ejemplo de imagen responsiva que cambia según el ancho de la pantalla">
+  </picture>
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="Edición en vivo" id="sec-editable">
+<details>
+  <summary><strong>✏️ Contenteditable — edición de texto en vivo</strong></summary>
+  <p>Hacé clic en el texto de abajo y editálo directamente. <strong>No necesita JavaScript</strong>, es HTML nativo:</p>
+  <blockquote contenteditable="true" spellcheck="true" cite="https://ejemplo.com">
+    <p>Este texto se puede editar directamente en el navegador. ¡Probá escribir lo que quieras!</p>
+  </blockquote>
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="Details anidados" id="sec-nested">
+<details>
+  <summary><strong>🪆 Details anidados — acordeón recursivo</strong></summary>
+  <p>Los elementos <code>&lt;details&gt;</code> se pueden anidar infinitamente:</p>
+  <details>
+    <summary>📁 Nivel 1 — Proyecto</summary>
+    <p>Contenido del proyecto</p>
+    <details>
+      <summary>📁 Nivel 2 — src</summary>
+      <p>Código fuente</p>
+      <details>
+        <summary>📁 Nivel 3 — components</summary>
+        <p>Componentes del proyecto</p>
+        <details>
+          <summary>📄 Nivel 4 — App.html</summary>
+          <p>¡Llegaste al archivo! Puro HTML hasta el final.</p>
+        </details>
+      </details>
+    </details>
+  </details>
 </details>
     </section>
 
