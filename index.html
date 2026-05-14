@@ -29,24 +29,7 @@
   <header>
     <h1>Pure HTML Showcase</h1>
     <p>A demonstration of the power of pure HTML, without CSS or JavaScript.</p>
-    <nav aria-label="Table of contents">
-      <ol>
-        <li><a href="pages/form.html"><p>🔵 Native Interactive Form</p></a></li>
-        <li><a href="pages/media.html"><p>🎬 Native Multimedia</p></a></li>
-        <li><a href="pages/tables.html"><p>📊 Tables &amp; Data</p></a></li>
-        <li><a href="pages/typography.html"><p>📝 Typography &amp; Semantic Text</p></a></li>
-        <li><a href="pages/imagemap.html"><p>🗺️ Interactive Image Map</p></a></li>
-        <li><a href="pages/progress.html"><p>🔢 Native Progress &amp; Metrics</p></a></li>
-        <li><a href="pages/dialog.html"><p>💬 Native Browser Dialog</p></a></li>
-        <li><a href="pages/lists.html"><p>📋 Lists &amp; Structure</p></a></li>
-        <li><a href="pages/entities.html"><p>🖋️ Fonts &amp; Special Characters</p></a></li>
-        <li><a href="pages/svg.html"><p>🎨 Inline Native SVG</p></a></li>
-        <li><a href="pages/math.html"><p>∑ Mathematics with MathML</p></a></li>
-        <li><a href="pages/picture.html"><p>🖼️ Responsive Images</p></a></li>
-        <li><a href="pages/editable.html"><p>✏️ Live Editing</p></a></li>
-        <li><a href="pages/optgroup.html"><p>📑 Select with optgroup</p></a></li>
-      </ol>
-    </nav>
+
   </header>
 
   <main id="main-content">
@@ -59,35 +42,35 @@
       <legend>User Registration</legend>
       <p>
         <label for="nombre">Full Name:</label><br>
-        <input type="text" id="nombre" name="nombre" placeholder="Ada Lovelace" required autofocus>
+        <input type="text" id="nombre" name="nombre" placeholder="Ada Lovelace" required autofocus autocomplete="name">
       </p>
       <p>
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" placeholder="ada@example.com" required>
+        <input type="email" id="email" name="email" placeholder="ada@example.com" required autocomplete="email">
       </p>
       <p>
         <label for="pass">Password (min. 8 characters):</label><br>
-        <input type="password" id="pass" name="pass" minlength="8" required>
+        <input type="password" id="pass" name="pass" minlength="8" required autocomplete="new-password">
       </p>
       <p>
         <label for="edad">Age (18–99):</label><br>
-        <input type="number" id="edad" name="edad" min="18" max="99" value="25">
+        <input type="number" id="edad" name="edad" min="18" max="99" value="25" autocomplete="off">
       </p>
       <p>
         <label for="fecha">Date of Birth:</label><br>
-        <input type="date" id="fecha" name="fecha">
+        <input type="date" id="fecha" name="fecha" autocomplete="bday">
       </p>
       <p>
         <label for="color">Favorite Color:</label>
-        <input type="color" id="color" name="color" value="#cc3333">
+        <input type="color" id="color" name="color" value="#cc3333" autocomplete="off">
       </p>
       <p>
         <label for="volumen">Experience Level:</label><br>
-        <input type="range" id="volumen" name="volumen" min="0" max="100" value="60">
+        <input type="range" id="volumen" name="volumen" min="0" max="100" value="60" autocomplete="off">
       </p>
       <p>
         <label for="pais">Country:</label><br>
-        <input type="text" id="pais" name="pais" list="paises" placeholder="Type your country...">
+        <input type="text" id="pais" name="pais" list="paises" placeholder="Type your country..." autocomplete="country-name">
         <datalist id="paises">
           <option value="Argentina">
           <option value="Mexico">
@@ -100,25 +83,25 @@
         </datalist>
       </p>
       <p>
-        <label>Interests:</label><br>
+        <span>Interests:</span><br>
         <label><input type="checkbox" name="int" value="tech"> Technology</label>
         <label><input type="checkbox" name="int" value="science"> Science</label>
         <label><input type="checkbox" name="int" value="art"> Art</label>
         <label><input type="checkbox" name="int" value="music"> Music</label>
       </p>
       <p>
-        <label>Previous Experience:</label><br>
+        <span>Previous Experience:</span><br>
         <label><input type="radio" name="exp" value="none"> None</label>
         <label><input type="radio" name="exp" value="some"> Some</label>
         <label><input type="radio" name="exp" value="expert" checked> Expert</label>
       </p>
       <p>
         <label for="bio">Short Biography:</label><br>
-        <textarea id="bio" name="bio" rows="3" cols="40" placeholder="Tell us about yourself..."></textarea>
+        <textarea id="bio" name="bio" rows="3" cols="40" placeholder="Tell us about yourself..." autocomplete="off"></textarea>
       </p>
       <p>
         <label for="foto">Upload Profile Picture:</label><br>
-        <input type="file" id="foto" name="foto" accept="image/*">
+        <input type="file" id="foto" name="foto" accept="image/*" autocomplete="photo">
       </p>
       <p>
         <button type="submit">Create Account</button>
@@ -496,6 +479,7 @@
 
   <footer>
     <p><small><em>Everything you see above is 100% pure HTML. Not a single line of CSS or JavaScript.</em></small></p>
+    <p><small>Made by <a href="https://github.com/zhilius">zhilius</a></small></p>
   </footer>
 
 </body>
