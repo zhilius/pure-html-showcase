@@ -45,6 +45,14 @@
         <li><a href="#sec-picture"><p>Imágenes responsivas</p></a></li>
         <li><a href="#sec-editable"><p>Edición en vivo</p></a></li>
         <li><a href="#sec-nested"><p>Details anidados</p></a></li>
+        <li><a href="#sec-figure"><p>Figure con figcaption</p></a></li>
+        <li><a href="#sec-accordion"><p>Acordeón con details name</p></a></li>
+        <li><a href="#sec-chart"><p>Gráfico SVG de barras</p></a></li>
+        <li><a href="#sec-optgroup"><p>Select con optgroup</p></a></li>
+        <li><a href="#sec-disabled"><p>Fieldset deshabilitado</p></a></li>
+        <li><a href="#sec-imgbtn"><p>Input tipo imagen</p></a></li>
+        <li><a href="#sec-output"><p>Output nativo</p></a></li>
+        <li><a href="#sec-textart"><p>Arte con texto</p></a></li>
       </ol>
     </nav>
   </header>
@@ -235,9 +243,12 @@
     <p>"La web está diseñada para funcionar para todos, independientemente del hardware, software, idioma o habilidades."</p>
     <footer>— Tim Berners-Lee</footer>
   </blockquote>
-  <pre><code>function saludo(nombre) {
+  <figure>
+    <figcaption>Función de saludo en JavaScript</figcaption>
+    <pre><code>function saludo(nombre) {
   return `Hola, ${nombre}!`;
 }</code></pre>
+  </figure>
   <p>Definición nativa:</p>
   <dl>
     <dt>HTML</dt>
@@ -465,6 +476,183 @@
       </details>
     </details>
   </details>
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="Figure con figcaption" id="sec-figure">
+<details>
+  <summary><strong>🖼️ Figure — contenido autónomo con leyenda</strong></summary>
+  <p><code>&lt;figure&gt;</code> agrupa contenido visual con su <code>&lt;figcaption&gt;</code>:</p>
+  <figure>
+    <figcaption>Estructura básica de un documento HTML</figcaption>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Mi página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;Hola mundo&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </figure>
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="Acordeón con details name" id="sec-accordion">
+<details>
+  <summary><strong>🔗 Details con name — acordeón que se cierra solo</strong></summary>
+  <p>Múltiples <code>&lt;details&gt;</code> con el mismo atributo <code>name</code> se comportan como un acordeón: abrir uno cierra los otros.</p>
+  <details name="faq">
+    <summary>¿Qué es el HTML semántico?</summary>
+    <p>Es usar etiquetas que describen el significado del contenido, como &lt;header&gt;, &lt;main&gt;, &lt;nav&gt;, &lt;article&gt;, en lugar de solo &lt;div&gt;.</p>
+  </details>
+  <details name="faq">
+    <summary>¿El HTML necesita CSS para funcionar?</summary>
+    <p>No. El HTML es funcional por sí solo. El CSS solo mejora la apariencia visual. Esta página es la prueba: puro HTML sin CSS.</p>
+  </details>
+  <details name="faq">
+    <summary>¿El HTML necesita JavaScript?</summary>
+    <p>Tampoco. HTML tiene elementos interactivos nativos como &lt;details&gt;, &lt;dialog&gt;, &lt;form&gt; y &lt;input&gt; que funcionan sin JS.</p>
+  </details>
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="Gráfico SVG de barras" id="sec-chart">
+<details>
+  <summary><strong>📊 Gráfico SVG de barras — datos visualizados en HTML puro</strong></summary>
+  <p>Chart de barras con SVG, basado en los datos de lenguajes 2026:</p>
+  <svg viewBox="0 0 440 230" xmlns="http://www.w3.org/2000/svg">
+    <line x1="50" y1="210" x2="430" y2="210" stroke="#333" stroke-width="2"/>
+    <line x1="50" y1="20" x2="50" y2="210" stroke="#333" stroke-width="2"/>
+    <rect x="65" y="38" width="35" height="172" fill="#306998"/>
+    <text x="82" y="224" text-anchor="middle" font-size="11">Py</text>
+    <text x="82" y="33" text-anchor="middle" font-size="11">96%</text>
+    <rect x="115" y="50" width="35" height="160" fill="#f0db4f"/>
+    <text x="132" y="224" text-anchor="middle" font-size="11">JS</text>
+    <text x="132" y="45" text-anchor="middle" font-size="11">91%</text>
+    <rect x="165" y="55" width="35" height="155" fill="#3178c6"/>
+    <text x="182" y="224" text-anchor="middle" font-size="11">TS</text>
+    <text x="182" y="50" text-anchor="middle" font-size="11">88%</text>
+    <rect x="215" y="75" width="35" height="135" fill="#b07219"/>
+    <text x="232" y="224" text-anchor="middle" font-size="11">Java</text>
+    <text x="232" y="70" text-anchor="middle" font-size="11">78%</text>
+    <rect x="265" y="105" width="35" height="105" fill="#00add8"/>
+    <text x="282" y="224" text-anchor="middle" font-size="11">Go</text>
+    <text x="282" y="100" text-anchor="middle" font-size="11">60%</text>
+    <rect x="315" y="115" width="35" height="95" fill="#dea584"/>
+    <text x="332" y="224" text-anchor="middle" font-size="11">Rust</text>
+    <text x="332" y="110" text-anchor="middle" font-size="11">52%</text>
+  </svg>
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="Select con optgroup" id="sec-optgroup">
+<details>
+  <summary><strong>📑 Select con optgroup — opciones agrupadas</strong></summary>
+  <p><code>&lt;optgroup&gt;</code> organiza opciones dentro de un <code>&lt;select&gt;</code>:</p>
+  <p>
+    <label for="lenguaje_fav">Elegí tu lenguaje favorito:</label><br>
+    <select id="lenguaje_fav" name="lenguaje_fav">
+      <optgroup label="Web">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+        <option value="ts">TypeScript</option>
+      </optgroup>
+      <optgroup label="Backend">
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="go">Go</option>
+        <option value="rust">Rust</option>
+      </optgroup>
+      <optgroup label="Mobile">
+        <option value="kotlin">Kotlin</option>
+        <option value="swift">Swift</option>
+      </optgroup>
+    </select>
+  </p>
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="Fieldset deshabilitado" id="sec-disabled">
+<details>
+  <summary><strong>🚫 Fieldset deshabilitado — todo un grupo inactivo</strong></summary>
+  <p>El atributo <code>disabled</code> en <code>&lt;fieldset&gt;</code> desactiva <strong>todos</strong> los campos internos de una vez:</p>
+  <fieldset disabled>
+    <legend>Formulario bloqueado</legend>
+    <p><label>Nombre: <input type="text" value="Ada Lovelace"></label></p>
+    <p><label>Email: <input type="email" value="ada@ejemplo.com"></label></p>
+    <p><label>País:
+      <select>
+        <option>Argentina</option>
+        <option>Brasil</option>
+        <option>Chile</option>
+      </select>
+    </label></p>
+    <p><label><input type="checkbox"> Aceptar términos</label></p>
+    <p><button type="submit">Enviar</button></p>
+  </fieldset>
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="Input tipo imagen" id="sec-imgbtn">
+<details>
+  <summary><strong>🖱️ Input type=image — botón que envía coordenadas</strong></summary>
+  <p><code>&lt;input type="image"&gt;</code> funciona como botón de envío pero además envía las coordenadas X/Y del clic:</p>
+  <form action="#">
+    <p><label>Nombre: <input type="text" name="nombre" placeholder="Tu nombre"></label></p>
+    <p><input type="image" src="https://placehold.co/200x40/4ecdc4/white?text=Enviar+con+imagen&font-size=18" alt="Botón de enviar personalizado" width="200" height="40"></p>
+  </form>
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="Output nativo" id="sec-output">
+<details>
+  <summary><strong>📤 Output — elemento para resultados de formularios</strong></summary>
+  <p><code>&lt;output&gt;</code> representa el resultado de un cálculo o acción del usuario. Sin JavaScript muestra su contenido estático:</p>
+  <form action="#">
+    <p>
+      <label>Valor A: <input type="number" id="a" name="a" value="10"></label><br>
+      <label>Valor B: <input type="number" id="b" name="b" value="20"></label>
+    </p>
+    <p>Resultado: <output name="resultado" for="a b">30</output></p>
+  </form>
+</details>
+    </section>
+
+    <hr>
+
+    <section aria-label="Arte con texto" id="sec-textart">
+<details>
+  <summary><strong>🎭 Arte con texto — ASCII, unicode y tipografía creativa</strong></summary>
+  <p>Arte ASCII con <code>&lt;pre&gt;</code>:</p>
+  <pre>    /\___/\
+   (  o o  )
+   (  =^=  )
+    (---)</pre>
+  <p>Arte geométrico con unicode blocks:</p>
+  <p>▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</p>
+  <p>░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░</p>
+  <p>◢◣◥◤◢◣◥◤◢◣◥◤◢◣◥◤◢◣◥◤</p>
+  <p>Letras decoradas con <code>&lt;bdo&gt;</code> (inversión de texto):</p>
+  <p><bdo dir="rtl">Texto escrito al revés</bdo></p>
+  <p><code>&lt;wbr&gt;</code> para saltos de palabra opcionales:</p>
+  <p>Super<wbr>cali<wbr>fragil<wbr>istico<wbr>espial<wbr>idoso</p>
+  <p>Subíndices y superíndices combinados: H<sub>2</sub>SO<sub>4</sub> + 2NaOH → Na<sub>2</sub>SO<sub>4</sub> + 2H<sub>2</sub>O</p>
 </details>
     </section>
 
