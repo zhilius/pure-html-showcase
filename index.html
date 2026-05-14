@@ -45,14 +45,7 @@
         <li><a href="#sec-picture"><p>Imágenes responsivas</p></a></li>
         <li><a href="#sec-editable"><p>Edición en vivo</p></a></li>
         <li><a href="#sec-nested"><p>Details anidados</p></a></li>
-        <li><a href="#sec-figure"><p>Figure con figcaption</p></a></li>
-        <li><a href="#sec-accordion"><p>Acordeón con details name</p></a></li>
-        <li><a href="#sec-chart"><p>Gráfico SVG de barras</p></a></li>
-        <li><a href="#sec-optgroup"><p>Select con optgroup</p></a></li>
-        <li><a href="#sec-disabled"><p>Fieldset deshabilitado</p></a></li>
-        <li><a href="#sec-imgbtn"><p>Input tipo imagen</p></a></li>
-        <li><a href="#sec-output"><p>Output nativo</p></a></li>
-        <li><a href="#sec-textart"><p>Arte con texto</p></a></li>
+
       </ol>
     </nav>
   </header>
@@ -479,50 +472,6 @@
 </details>
     </section>
 
-    <hr>
-
-    <section aria-label="Figure con figcaption" id="sec-figure">
-<details>
-  <summary><strong>🖼️ Figure — contenido autónomo con leyenda</strong></summary>
-  <p><code>&lt;figure&gt;</code> agrupa contenido visual con su <code>&lt;figcaption&gt;</code>:</p>
-  <figure>
-    <figcaption>Estructura básica de un documento HTML</figcaption>
-    <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="es"&gt;
-  &lt;head&gt;
-    &lt;title&gt;Mi página&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;Hola mundo&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-  </figure>
-</details>
-    </section>
-
-    <hr>
-
-    <section aria-label="Acordeón con details name" id="sec-accordion">
-<details>
-  <summary><strong>🔗 Details con name — acordeón que se cierra solo</strong></summary>
-  <p>Múltiples <code>&lt;details&gt;</code> con el mismo atributo <code>name</code> se comportan como un acordeón: abrir uno cierra los otros.</p>
-  <details name="faq">
-    <summary>¿Qué es el HTML semántico?</summary>
-    <p>Es usar etiquetas que describen el significado del contenido, como &lt;header&gt;, &lt;main&gt;, &lt;nav&gt;, &lt;article&gt;, en lugar de solo &lt;div&gt;.</p>
-  </details>
-  <details name="faq">
-    <summary>¿El HTML necesita CSS para funcionar?</summary>
-    <p>No. El HTML es funcional por sí solo. El CSS solo mejora la apariencia visual. Esta página es la prueba: puro HTML sin CSS.</p>
-  </details>
-  <details name="faq">
-    <summary>¿El HTML necesita JavaScript?</summary>
-    <p>Tampoco. HTML tiene elementos interactivos nativos como &lt;details&gt;, &lt;dialog&gt;, &lt;form&gt; y &lt;input&gt; que funcionan sin JS.</p>
-  </details>
-</details>
-    </section>
-
-    <hr>
-
     <section aria-label="Gráfico SVG de barras" id="sec-chart">
 <details>
   <summary><strong>📊 Gráfico SVG de barras — datos visualizados en HTML puro</strong></summary>
@@ -581,62 +530,6 @@
   </p>
 </details>
     </section>
-
-    <hr>
-
-    <section aria-label="Fieldset deshabilitado" id="sec-disabled">
-<details>
-  <summary><strong>🚫 Fieldset deshabilitado — todo un grupo inactivo</strong></summary>
-  <p>El atributo <code>disabled</code> en <code>&lt;fieldset&gt;</code> desactiva <strong>todos</strong> los campos internos de una vez:</p>
-  <fieldset disabled>
-    <legend>Formulario bloqueado</legend>
-    <p><label>Nombre: <input type="text" value="Ada Lovelace"></label></p>
-    <p><label>Email: <input type="email" value="ada@ejemplo.com"></label></p>
-    <p><label>País:
-      <select>
-        <option>Argentina</option>
-        <option>Brasil</option>
-        <option>Chile</option>
-      </select>
-    </label></p>
-    <p><label><input type="checkbox"> Aceptar términos</label></p>
-    <p><button type="submit">Enviar</button></p>
-  </fieldset>
-</details>
-    </section>
-
-    <hr>
-
-    <section aria-label="Input tipo imagen" id="sec-imgbtn">
-<details>
-  <summary><strong>🖱️ Input type=image — botón que envía coordenadas</strong></summary>
-  <p><code>&lt;input type="image"&gt;</code> funciona como botón de envío pero además envía las coordenadas X/Y del clic:</p>
-  <form action="#">
-    <p><label>Nombre: <input type="text" name="nombre" placeholder="Tu nombre"></label></p>
-    <p><input type="image" src="https://placehold.co/200x40/4ecdc4/white?text=Enviar+con+imagen&font-size=18" alt="Botón de enviar personalizado" width="200" height="40"></p>
-  </form>
-</details>
-    </section>
-
-    <hr>
-
-    <section aria-label="Output nativo" id="sec-output">
-<details>
-  <summary><strong>📤 Output — elemento para resultados de formularios</strong></summary>
-  <p><code>&lt;output&gt;</code> representa el resultado de un cálculo o acción del usuario. Sin JavaScript muestra su contenido estático:</p>
-  <form action="#">
-    <p>
-      <label>Valor A: <input type="number" id="a" name="a" value="10"></label><br>
-      <label>Valor B: <input type="number" id="b" name="b" value="20"></label>
-    </p>
-    <p>Resultado: <output name="resultado" for="a b">30</output></p>
-  </form>
-</details>
-    </section>
-
-    <hr>
-
-    <section aria-label="Arte con texto" id="sec-textart">
 <details>
   <summary><strong>🎭 Arte con texto — ASCII, unicode y tipografía creativa</strong></summary>
   <p>Arte ASCII con <code>&lt;pre&gt;</code>:</p>
